@@ -1,0 +1,1290 @@
+@font-face {
+  font-family: "VEMI Homepage Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/homepage-v2/inter-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "VEMI Homepage Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/homepage-v2/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "VEMI Homepage Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/homepage-v2/fraunces-600-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "VEMI Homepage Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/homepage-v2/fraunces-600-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.page {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  :global(.vemi-home-mobile).page {
+    --home-ink: #0b3c2c;
+    --home-copy: #525a52;
+    --home-surface: #fafbf7;
+    --home-sage: #e5ece0;
+    --home-border: #e2e8d8;
+    --home-lime-start: #c7e50d;
+    --home-lime-end: #8cd10d;
+    --home-dark: #1b2a1c;
+    --home-edge-light: rgba(255, 255, 255, 0.78);
+    --home-edge-sage: rgba(91, 118, 84, 0.2);
+    --home-shadow-card: 0 14px 28px -20px rgba(28, 55, 39, 0.34), 0 2px 5px rgba(22, 45, 31, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.72);
+    --home-shadow-feature: 0 20px 38px -24px rgba(26, 55, 37, 0.34), 0 3px 7px rgba(22, 45, 31, 0.07), inset 0 1px 0 rgba(255, 255, 255, 0.68);
+    --home-shadow-repeat: 0 9px 18px -14px rgba(27, 53, 37, 0.28), 0 1px 3px rgba(22, 45, 31, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+    --home-shadow-dark: 0 24px 46px -24px rgba(3, 22, 14, 0.58), 0 5px 12px -8px rgba(3, 20, 12, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.13);
+    --home-shadow-lime: 0 13px 24px -15px rgba(116, 168, 8, 0.58), 0 3px 7px rgba(99, 146, 7, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.42);
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 0;
+    padding: 32px 0 64px;
+    gap: 16px;
+    overflow: visible;
+    color: var(--home-ink);
+    background: linear-gradient(180deg, #fbfaf4 0%, #f4f7ef 48%, #eef4e8 100%);
+    font-family: "VEMI Homepage Inter", Arial, sans-serif;
+    font-synthesis: none;
+  }
+
+  .page,
+  .page *,
+  .page *::before,
+  .page *::after {
+    box-sizing: border-box;
+  }
+
+  .page :where(h1, h2, h3, p, ol) {
+    margin: 0;
+  }
+
+  .page :where(a, button) {
+    color: inherit;
+    font: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .page :where(a, button):focus-visible {
+    outline: 3px solid rgba(11, 60, 44, 0.5);
+    outline-offset: 3px;
+  }
+
+  .section {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    flex: 0 0 auto;
+  }
+
+  .hero {
+    display: flex;
+    min-height: 253px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .heroCopy {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hero h1,
+  .sectionHeader h2,
+  .choicesHeader h2,
+  .workoutCopy h2,
+  .exerciseCard h2,
+  .splitContent h3,
+  .chatHeader h2 {
+    font-family: "VEMI Homepage Fraunces", Georgia, serif;
+    font-weight: 600;
+    font-variation-settings: "SOFT" 0, "WONK" 1;
+  }
+
+  .hero h1 {
+    color: var(--home-ink);
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.6px;
+  }
+
+  .heroCopy > p {
+    color: var(--home-copy);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.55;
+  }
+
+  .primaryCta,
+  .workoutCta {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    align-items: center;
+    justify-content: space-between;
+    border: 0;
+    background: linear-gradient(90deg, var(--home-lime-start) 0%, var(--home-lime-end) 100%);
+    color: #0a2914;
+    box-shadow: var(--home-shadow-lime);
+    font-weight: 600;
+  }
+
+  .primaryCta {
+    min-height: 60px;
+    padding: 10px 16px 10px 24px;
+    border-radius: 28px;
+    font-size: 20px;
+  }
+
+  .actionArrow {
+    display: grid;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    place-items: center;
+    border-radius: 18px;
+    background: linear-gradient(180deg, #293d29 0%, #121f14 100%);
+    box-shadow: 0 4px 9px -5px rgba(4, 23, 13, 0.72), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    opacity: 0.9;
+  }
+
+  .actionArrow img {
+    display: block;
+    width: 14px;
+    height: 14px;
+  }
+
+  .actionArrowCompact {
+    width: 30px;
+    height: 30px;
+    flex-basis: 30px;
+    border-radius: 15px;
+  }
+
+  .pillars {
+    display: grid;
+    min-height: 190px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    padding: 0 20px;
+  }
+
+  .pillarCard {
+    display: flex;
+    height: 190px;
+    min-width: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 14px;
+    overflow: clip;
+    border: 1px solid var(--home-edge-sage);
+    border-radius: 24px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.98) 0%, rgba(251, 252, 248, 0.98) 56%, rgba(232, 240, 226, 0.72) 100%), #fff;
+    box-shadow: var(--home-shadow-card);
+  }
+
+  .pillarIcon {
+    display: grid;
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    place-items: center;
+    border: 1px solid var(--home-edge-light);
+    border-radius: 20px;
+    background: linear-gradient(145deg, #edf3e9 0%, #dfe9d9 100%);
+    box-shadow: 0 7px 14px -10px rgba(27, 58, 39, 0.48), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+
+  .pillarIcon img {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
+  .pillarCopy {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .pillarCopy strong {
+    color: var(--home-ink);
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .pillarCopy > span {
+    color: var(--home-copy);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .doubleChevron {
+    display: flex;
+    width: 40px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    color: var(--home-ink);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -4px;
+    white-space: nowrap;
+  }
+
+  .workoutSection {
+    min-height: 281px;
+    padding: 10px 20px 0;
+  }
+
+  .workoutCard {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    min-height: 276px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 18px;
+    padding: 23px;
+    overflow: clip;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 32px;
+    background: linear-gradient(135deg, #173b28 0%, #0d2b1d 52%, #071b12 100%);
+    box-shadow: var(--home-shadow-dark);
+  }
+
+  .workoutIllustration {
+    position: absolute;
+    z-index: 0;
+    top: -13px;
+    right: 6px;
+    display: block;
+    width: 106px;
+    height: 106px;
+    object-fit: contain;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  .workoutUpper {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .darkBadge,
+  .chatBadge {
+    display: inline-flex;
+    min-height: 29px;
+    align-items: center;
+    padding: 5px 14px;
+    border: 1px solid #b8e42e;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #b8e42e;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .workoutCopy {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .workoutCopy h2 {
+    color: #fff;
+    font-size: 28px;
+    line-height: 1.15;
+  }
+
+  .workoutCopy p {
+    max-width: 100%;
+    color: #c6cec6;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .darkRule {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: 1px;
+    flex: 0 0 1px;
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .workoutCta {
+    min-height: 52px;
+    flex: 0 0 52px;
+    padding: 10px 12px 10px 20px;
+    border-radius: 26px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: left;
+    box-shadow: 0 12px 22px -15px rgba(145, 205, 17, 0.64), 0 2px 5px rgba(97, 144, 8, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.38);
+  }
+
+  .workoutChevron {
+    flex: 0 0 40px;
+  }
+
+  .choicesSection {
+    padding: 16px 20px 20px;
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(248, 246, 239, 0.58), rgba(239, 244, 234, 0.48));
+  }
+
+  .choicesCard {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    min-height: 445px;
+    flex-direction: column;
+    gap: 16px;
+    padding: 18px 24px;
+    overflow: clip;
+    border: 1px solid var(--home-edge-sage);
+    border-radius: 32px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(249, 251, 246, 0.96) 54%, rgba(231, 239, 225, 0.86) 100%), var(--home-surface);
+    box-shadow: var(--home-shadow-feature);
+  }
+
+  .checklistIllustration {
+    position: absolute;
+    z-index: 0;
+    top: 7px;
+    right: 5px;
+    display: block;
+    width: 97px;
+    height: 96px;
+    object-fit: contain;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+
+  .choicesHeader {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .lightBadge,
+  .recommendationBadge {
+    display: inline-flex;
+    min-height: 25px;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 100px;
+    background: var(--home-sage);
+    color: var(--home-ink);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .choicesHeader h2 {
+    color: var(--home-ink);
+    font-size: 34px;
+    line-height: 38px;
+    letter-spacing: -0.34px;
+  }
+
+  .stepsList {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    min-width: 0;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+  }
+
+  .step {
+    display: grid;
+    min-height: 69px;
+    grid-template-columns: 40px 36px minmax(0, 1fr);
+    align-items: center;
+    gap: 14px;
+    padding: 14px 0;
+    color: #1b2a1c;
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .step + .step {
+    border-top: 1px solid rgba(77, 97, 74, 0.2);
+  }
+
+  .stepNumber,
+  .stepIcon {
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    background: var(--home-sage);
+  }
+
+  .stepNumber {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    color: var(--home-ink);
+    box-shadow: 0 6px 12px -9px rgba(27, 56, 39, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.72);
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .stepIcon {
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+  }
+
+  .stepIcon img {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
+  .librarySection,
+  .recommendationsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 6px 20px 0;
+  }
+
+  .sectionHeader {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .sectionHeader h2 {
+    color: var(--home-ink);
+    font-size: 34px;
+    line-height: 38px;
+    letter-spacing: -0.34px;
+  }
+
+  .sectionHeader p {
+    color: var(--home-copy);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .splitCard {
+    display: grid;
+    width: 100%;
+    min-width: 0;
+    height: 200px;
+    grid-template-columns: minmax(116px, 160px) minmax(0, 1fr);
+    overflow: clip;
+    border: 1px solid var(--home-edge-sage);
+    border-radius: 28px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.92) 0%, rgba(248, 250, 245, 0.96) 54%, rgba(232, 240, 226, 0.88) 100%), var(--home-surface);
+    box-shadow: var(--home-shadow-feature);
+  }
+
+  .splitIllustration {
+    width: 100%;
+    min-width: 0;
+    height: 200px;
+    overflow: clip;
+    background: linear-gradient(145deg, rgba(235, 241, 232, 0.82), rgba(250, 250, 246, 0.54));
+    box-shadow: inset -1px 0 0 rgba(84, 111, 77, 0.14);
+  }
+
+  .splitIllustration img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .libraryIllustration {
+    background: linear-gradient(145deg, #fbfaf5, #f5f5ee);
+    box-shadow: inset -1px 0 0 rgba(84, 111, 77, 0.1);
+  }
+
+  .splitContent {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    height: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 20px 16px 9px;
+  }
+
+  .recommendationBadge {
+    gap: 6px;
+    min-height: 24px;
+    padding: 5px 12px 5px 10px;
+    font-size: 12px;
+    text-transform: none;
+    white-space: nowrap;
+  }
+
+  .recommendationBadge img {
+    display: block;
+    width: 12px;
+    height: 12px;
+  }
+
+  .splitContent h3 {
+    color: var(--home-ink);
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -0.13px;
+  }
+
+  .splitContent > p {
+    color: var(--home-copy);
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .splitChevron {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+  }
+
+  .sproutDivider {
+    display: grid;
+    width: 100%;
+    height: 20px;
+    place-items: center;
+  }
+
+  .sproutDivider img {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .libraryCategories {
+    display: grid;
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 104px;
+    gap: 8px;
+  }
+
+  .libraryCategory {
+    display: flex;
+    min-width: 0;
+    min-height: 100px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 14px 4px;
+    border: 1px solid var(--home-edge-sage);
+    border-radius: 18px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(237, 243, 233, 0.74)), #fff;
+    box-shadow: var(--home-shadow-repeat);
+    color: var(--home-ink);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .categoryIcon {
+    display: grid;
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+    place-items: center;
+    border-radius: 10px;
+    background: var(--home-sage);
+  }
+
+  .categoryIcon img {
+    display: block;
+    width: 18px;
+    height: 18px;
+  }
+
+  .sectionDivider {
+    width: calc(100% - 90px);
+    min-width: 0;
+    height: 1px;
+    flex: 0 0 1px;
+    margin: 0 auto;
+    border-radius: 1px;
+    background: rgba(77, 97, 74, 0.16);
+  }
+
+  .exerciseSection {
+    padding: 6px 20px 20px;
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(239, 246, 236, 0.48), rgba(231, 241, 225, 0.42));
+  }
+
+  .exerciseCard {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    min-height: 348px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px 24px 24px;
+    overflow: clip;
+    border: 1px solid rgba(122, 151, 103, 0.3);
+    border-radius: 32px;
+    background: linear-gradient(135deg, rgba(252, 252, 247, 0.97) 0%, rgba(232, 241, 221, 0.95) 58%, rgba(246, 248, 240, 0.97) 100%), var(--home-surface);
+    box-shadow: var(--home-shadow-feature);
+  }
+
+  .exerciseWave,
+  .exerciseIllustration {
+    position: absolute;
+    z-index: 0;
+    display: block;
+    pointer-events: none;
+  }
+
+  .exerciseWave {
+    opacity: 0.46;
+  }
+
+  .exerciseWaveOne {
+    bottom: -53px;
+    left: -61px;
+    width: 260px;
+    height: 260px;
+  }
+
+  .exerciseWaveTwo {
+    top: -41px;
+    right: -51px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .exerciseWaveThree {
+    right: -51px;
+    bottom: 7px;
+    width: 140px;
+    height: 140px;
+  }
+
+  .exerciseIllustration {
+    top: 10px;
+    right: 5px;
+    width: 144px;
+    height: 133px;
+    border-radius: 45px;
+    object-fit: contain;
+  }
+
+  .exerciseCard > :not(.exerciseWave):not(.exerciseIllustration) {
+    position: relative;
+    z-index: 1;
+  }
+
+  .exerciseCard h2 {
+    width: 100%;
+    max-width: 305px;
+    min-width: 0;
+    min-height: 129px;
+    color: var(--home-ink);
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.6px;
+  }
+
+  .exerciseCard > p {
+    color: #3d5240;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .exerciseCta {
+    min-height: 48px;
+    margin-top: auto;
+    padding: 8px 12px 8px 24px;
+    font-size: 16px;
+  }
+
+  .recommendationsCard {
+    grid-template-columns: minmax(112px, 139px) minmax(0, 1fr);
+    box-shadow: var(--home-shadow-feature);
+  }
+
+  .recommendationsIllustration {
+    height: 174px;
+    align-self: center;
+  }
+
+  .recommendationsIllustration img {
+    object-fit: contain;
+    padding: 16px 10px;
+  }
+
+  .recommendationPills {
+    display: grid;
+    width: 100%;
+    min-width: 0;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: 58px;
+    gap: 8px;
+  }
+
+  .recommendationPill {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 6px;
+    border: 1px solid;
+    border-radius: 22px;
+    box-shadow: var(--home-shadow-repeat);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .recommendationPill img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+  }
+
+  .toneLife {
+    border-color: rgba(77, 97, 74, 0.25);
+    background: #e5ece0;
+    color: #4d614a;
+  }
+
+  .toneFood {
+    border-color: rgba(153, 102, 51, 0.25);
+    background: #f5eae0;
+    color: #996633;
+  }
+
+  .toneStress {
+    border-color: rgba(115, 77, 140, 0.25);
+    background: #ece5ef;
+    color: #734d8c;
+  }
+
+  .toneCalculator {
+    border-color: rgba(51, 102, 153, 0.25);
+    background: #e0eaf2;
+    color: #336699;
+  }
+
+  .toneRecipes {
+    border-color: rgba(153, 64, 64, 0.25);
+    background: #f2e5e5;
+    color: #994040;
+  }
+
+  .toneIntolerances {
+    border-color: rgba(116, 109, 52, 0.24);
+    background: #f1efd9;
+    color: #746d34;
+  }
+
+  .chatSection {
+    padding: 24px 20px 0;
+  }
+
+  .chatCard {
+    position: relative;
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    min-height: 625px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 17px;
+    padding: 24px;
+    overflow: clip;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 32px;
+    background: radial-gradient(circle at 88% 8%, rgba(143, 184, 78, 0.11) 0%, rgba(143, 184, 78, 0) 30%), radial-gradient(circle at 12% 76%, rgba(89, 134, 82, 0.08) 0%, rgba(89, 134, 82, 0) 28%), linear-gradient(135deg, #153822 0%, #0b2518 56%, #06170f 100%), #0d1f0e;
+    box-shadow: var(--home-shadow-dark);
+  }
+
+  .chatHeader {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .chatBadge {
+    min-height: 25px;
+    padding: 5px 12px;
+    border-color: rgba(184, 228, 46, 0.4);
+    font-size: 12px;
+  }
+
+  .chatHeader h2 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.6px;
+  }
+
+  .chatHeader p {
+    color: #a8bca8;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .chatContent {
+    display: grid;
+    width: 100%;
+    min-width: 0;
+    min-height: 190px;
+    height: 190px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .chatTopics {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .chatTopic {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 10px 9px 12px;
+    overflow: clip;
+    border: 1px solid rgba(153, 194, 137, 0.2);
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.065), rgba(132, 183, 113, 0.035));
+    box-shadow: 0 7px 14px -11px rgba(0, 0, 0, 0.72), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    color: #c6d8c6;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  .chatTopic > span {
+    display: grid;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+    place-items: center;
+    border-radius: 11px;
+    background: rgba(132, 183, 113, 0.1);
+  }
+
+  .chatTopic img {
+    display: block;
+    width: 14px;
+    height: 14px;
+  }
+
+  .chatPreview {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    min-height: 190px;
+    height: 190px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px;
+    overflow: clip;
+    border: 1px solid rgba(166, 201, 152, 0.2);
+    border-radius: 20px;
+    background: linear-gradient(145deg, rgba(32, 66, 38, 0.98), rgba(14, 40, 24, 0.98)), #162b17;
+    box-shadow: 0 14px 26px -18px rgba(0, 0, 0, 0.78), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+
+  .chatPreview::after {
+    position: absolute;
+    z-index: 2;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    height: 30px;
+    border-radius: 0 0 18px 18px;
+    background: linear-gradient(180deg, rgba(14, 40, 24, 0), #0e2818 86%);
+    content: "";
+    pointer-events: none;
+  }
+
+  .chatPreviewHeader {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #234a29, #17371f);
+  }
+
+  .chatAvatar {
+    display: grid;
+    width: 26px;
+    height: 26px;
+    flex: 0 0 26px;
+    place-items: center;
+    border: 1px solid rgba(184, 228, 46, 0.4);
+    border-radius: 13px;
+    background: linear-gradient(90deg, #4a7c3f, #2a4a2a);
+    color: #b8e42e;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  .chatPreviewHeader > span:last-child {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 1px;
+  }
+
+  .chatPreviewHeader strong {
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.1;
+  }
+
+  .chatPreviewHeader small {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: #84b771;
+    font-size: 9px;
+    line-height: 1.1;
+  }
+
+  .chatPreviewHeader i {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #8cd10d;
+  }
+
+  .chatBubble {
+    max-width: 140px;
+    padding: 7px 10px;
+    border-radius: 12px 12px 12px 4px;
+    background: linear-gradient(145deg, #214827, #17361e);
+    color: #a8bca8;
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .chatBubbleUser {
+    align-self: flex-end;
+    border: 1px solid rgba(184, 228, 46, 0.2);
+    border-radius: 12px 12px 4px 12px;
+    background: rgba(184, 228, 46, 0.1);
+    color: #c6d8c6;
+  }
+
+  .typingIndicator {
+    display: block;
+    width: 40px;
+    height: 16px;
+  }
+
+  .chatIcon {
+    display: grid;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    place-items: center;
+    align-self: center;
+    border: 1px solid rgba(184, 228, 46, 0.25);
+    border-radius: 22px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 18px -13px rgba(0, 0, 0, 0.72), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+
+  .chatIcon img {
+    display: block;
+    width: 22px;
+    height: 22px;
+  }
+
+  .chatCta {
+    flex: 0 0 60px;
+  }
+
+  .chatAvailability {
+    display: flex;
+    min-height: 17px;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: #6b8c6b;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .chatAvailability img {
+    display: block;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width: 389px) {
+  :global(.vemi-home-mobile).page {
+    --home-shadow-card: 0 11px 22px -18px rgba(28, 55, 39, 0.28), 0 1px 3px rgba(22, 45, 31, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.68);
+    --home-shadow-feature: 0 15px 30px -24px rgba(26, 55, 37, 0.28), 0 2px 5px rgba(22, 45, 31, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.64);
+    --home-shadow-repeat: 0 7px 14px -13px rgba(27, 53, 37, 0.22), 0 1px 2px rgba(22, 45, 31, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.62);
+    --home-shadow-dark: 0 18px 36px -24px rgba(3, 22, 14, 0.5), 0 3px 8px -7px rgba(3, 20, 12, 0.34), inset 0 1px 0 rgba(255, 255, 255, 0.11);
+    --home-shadow-lime: 0 10px 20px -15px rgba(116, 168, 8, 0.5), 0 2px 5px rgba(99, 146, 7, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.38);
+  }
+
+  .pillarCard {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .libraryCategories {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .chatCard {
+    background: radial-gradient(circle at 88% 8%, rgba(143, 184, 78, 0.07) 0%, rgba(143, 184, 78, 0) 26%), radial-gradient(circle at 12% 76%, rgba(89, 134, 82, 0.045) 0%, rgba(89, 134, 82, 0) 24%), linear-gradient(135deg, #153822 0%, #0b2518 56%, #06170f 100%), #0d1f0e;
+  }
+
+  .exerciseIllustration {
+    right: -14px;
+    width: 132px;
+    height: 122px;
+  }
+
+}
+
+@media (max-width: 359px) {
+  :global(.vemi-home-mobile).page {
+    padding-top: 28px;
+  }
+
+  .hero,
+  .pillars,
+  .workoutSection,
+  .choicesSection,
+  .librarySection,
+  .exerciseSection,
+  .recommendationsSection,
+  .chatSection {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .hero h1,
+  .exerciseCard h2,
+  .chatHeader h2 {
+    font-size: 35px;
+    line-height: 39px;
+  }
+
+  .primaryCta {
+    min-height: 56px;
+    padding-right: 12px;
+    padding-left: 18px;
+    font-size: 17px;
+  }
+
+  .pillars {
+    gap: 6px;
+  }
+
+  .pillarCard {
+    padding: 16px 8px;
+    border-radius: 20px;
+  }
+
+  .pillarCopy strong {
+    font-size: 16px;
+  }
+
+  .pillarCopy > span {
+    font-size: 12px;
+  }
+
+  .choicesCard {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .choicesHeader h2,
+  .sectionHeader h2 {
+    font-size: 31px;
+    line-height: 35px;
+  }
+
+  .step {
+    grid-template-columns: 38px 34px minmax(0, 1fr);
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .stepNumber {
+    width: 38px;
+    height: 38px;
+  }
+
+  .stepIcon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .splitCard,
+  .recommendationsCard {
+    grid-template-columns: minmax(104px, 40%) minmax(0, 1fr);
+  }
+
+  .splitContent {
+    padding-right: 11px;
+    padding-left: 11px;
+  }
+
+  .recommendationBadge {
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 12px;
+  }
+
+  .splitContent h3 {
+    font-size: 23px;
+    line-height: 27px;
+  }
+
+  .splitContent > p {
+    font-size: 12px;
+  }
+
+  .libraryCategories {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-auto-rows: 96px;
+    gap: 8px;
+  }
+
+  .libraryCategory {
+    min-height: 96px;
+    gap: 8px;
+    padding: 12px 3px;
+    border-radius: 15px;
+    font-size: 12px;
+  }
+
+  .categoryIcon {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+  }
+
+  .exerciseCard {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .exerciseIllustration {
+    right: -14px;
+    width: 108px;
+    height: 100px;
+  }
+
+  .exerciseCta {
+    font-size: 14px;
+  }
+
+  .recommendationPill {
+    padding-right: 12px;
+    padding-left: 10px;
+  }
+
+  .recommendationPills {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .chatCard {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .chatCta {
+    font-size: 17px;
+  }
+}

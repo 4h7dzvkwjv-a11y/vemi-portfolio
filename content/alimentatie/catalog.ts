@@ -1,0 +1,538 @@
+import type { EditorialArticle, EditorialCategory } from "@/lib/editorial/types";
+
+export const nutritionCategorySlugs = [
+  "bazele-alimentatiei",
+  "alimentatia-de-zi-cu-zi",
+  "alimentatia-pentru-obiectiv",
+  "retete-simple",
+  "restrictii-si-intolerante",
+  "calculator-caloric",
+] as const;
+
+export type NutritionCategorySlug = (typeof nutritionCategorySlugs)[number];
+export type NutritionCategory = EditorialCategory<NutritionCategorySlug>;
+export type NutritionArticle = EditorialArticle<NutritionCategorySlug>;
+
+export const nutritionCategories: NutritionCategory[] = [
+  {
+    slug: "bazele-alimentatiei",
+    title: "Bazele alimentației",
+    description: "Concepte esențiale despre energie, nutrienți și echilibru, explicate fără complicații inutile.",
+    eyebrow: "Înțelege elementele de bază",
+    visual: "nutrition-foundation",
+    access: "public",
+  },
+  {
+    slug: "alimentatia-de-zi-cu-zi",
+    title: "Alimentația de zi cu zi",
+    description: "Repere practice pentru mese, gustări și alegeri potrivite unui program real.",
+    eyebrow: "Alegeri pentru fiecare zi",
+    visual: "nutrition-daily",
+    access: "public",
+  },
+  {
+    slug: "alimentatia-pentru-obiectiv",
+    title: "Alimentația pentru obiectiv",
+    description: "Cum se poate adapta alimentația pentru slăbire, menținere sau creștere în greutate.",
+    eyebrow: "Direcție, nu reguli rigide",
+    visual: "nutrition-goal",
+    access: "public",
+  },
+  {
+    slug: "retete-simple",
+    title: "Rețete simple",
+    description: "Idei ușor de pregătit, cu ingrediente accesibile și valori nutriționale orientative.",
+    eyebrow: "Simplu de pregătit",
+    visual: "nutrition-recipes",
+    access: "public",
+  },
+  {
+    slug: "restrictii-si-intolerante",
+    title: "Restricții și intoleranțe",
+    description: "Informații prudente despre intoleranțe, alergii și alimentații restrictive.",
+    eyebrow: "Alegeri informate și sigure",
+    visual: "nutrition-restrictions",
+    access: "public",
+  },
+  {
+    slug: "calculator-caloric",
+    title: "Calculator caloric",
+    description: "O estimare orientativă a necesarului caloric pentru menținere, slăbire sau creștere în greutate.",
+    eyebrow: "Estimare locală și transparentă",
+    visual: "nutrition-calculator",
+    access: "public",
+  },
+];
+
+export const nutritionArticles: NutritionArticle[] = [
+  {
+    categorySlug: "bazele-alimentatiei",
+    slug: "caloriile-ce-sunt-si-de-ce-conteaza",
+    title: "Caloriile: ce sunt și de ce contează",
+    label: "Bazele alimentației",
+    summary: "O explicație simplă despre energia din alimente, balanța energetică și motivul pentru care numărul de calorii nu descrie singur calitatea unei alimentații.",
+    readingTimeMinutes: 4,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "O calorie este o unitate de energie, nu o etichetă care face un aliment automat „bun” sau „rău”.",
+      "Greutatea este influențată în timp de relația dintre energia consumată și energia folosită de organism.",
+      "Necesarul caloric este individual, iar calitatea alimentației contează dincolo de totalul de calorii.",
+    ],
+    recommendedSlugs: ["proteine-carbohidrati-si-grasimi", "calitatea-alimentelor-vs-numarul-de-calorii"],
+    sources: [
+      {
+        institution: "Administrația pentru Alimente și Medicamente din Statele Unite",
+        title: "How to Understand and Use the Nutrition Facts Label",
+        year: 2024,
+        type: "Ghid oficial pentru etichetarea nutrițională",
+        url: "https://www.fda.gov/food/nutrition-facts-label/how-understand-and-use-nutrition-facts-label",
+      },
+      {
+        institution: "Serviciul Național de Sănătate din Regatul Unit",
+        title: "Understanding calories",
+        year: 2023,
+        type: "Ghid clinic pentru public",
+        url: "https://www.nhs.uk/live-well/healthy-weight/managing-your-weight/understanding-calories/",
+      },
+      {
+        institution: "Organizația Mondială a Sănătății",
+        title: "Healthy diet",
+        year: 2026,
+        type: "Fișă informativă oficială",
+        url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet",
+      },
+      {
+        institution: "Hall KD și colaboratorii · American Journal of Clinical Nutrition",
+        title: "Energy balance and its components: implications for body weight regulation",
+        year: 2012,
+        type: "Review științific indexat în NIH/PMC",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/",
+      },
+    ],
+  },
+  {
+    categorySlug: "bazele-alimentatiei",
+    slug: "proteine-carbohidrati-si-grasimi",
+    title: "Proteine, carbohidrați și grăsimi",
+    label: "Bazele alimentației",
+    summary: "Rolul celor trei macronutrienți, sursele alimentare și motivul pentru care proporțiile potrivite diferă în funcție de persoană și context.",
+    readingTimeMinutes: 4,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Proteinele, carbohidrații și grăsimile au roluri diferite, iar toate pot face parte dintr-o alimentație echilibrată.",
+      "Sursa alimentară și contextul mesei spun mai mult decât simpla etichetă a unui macronutrient.",
+      "Proporțiile utile depind de necesarul, activitatea, preferințele și obiectivul fiecărei persoane.",
+    ],
+    recommendedSlugs: ["cum-arata-o-alimentatie-echilibrata", "calitatea-alimentelor-vs-numarul-de-calorii"],
+    sources: [
+      { institution: "Organizația Mondială a Sănătății", title: "Healthy diet", year: 2026, type: "Fișă informativă oficială", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+      { institution: "Organizația Mondială a Sănătății", title: "Carbohydrate intake for adults and children: WHO guideline", year: 2023, type: "Ghid bazat pe dovezi", url: "https://www.who.int/publications/i/item/9789240073593" },
+      { institution: "Organizația Mondială a Sănătății", title: "Total fat intake for the prevention of unhealthy weight gain in adults and children: WHO guideline", year: 2023, type: "Ghid bazat pe dovezi", url: "https://www.who.int/publications/i/item/9789240073654" },
+      { institution: "Autoritatea Europeană pentru Siguranța Alimentară", title: "Scientific Opinion on Dietary Reference Values for protein", year: 2012, type: "Opinie științifică EFSA", url: "https://www.efsa.europa.eu/en/efsajournal/pub/2557" },
+    ],
+  },
+  {
+    categorySlug: "bazele-alimentatiei",
+    slug: "cum-arata-o-alimentatie-echilibrata",
+    title: "Cum arată o alimentație echilibrată",
+    label: "Bazele alimentației",
+    summary: "Un model practic pentru varietate, mese complete, hidratare și flexibilitate, fără reguli rigide sau obsesia unei farfurii perfecte.",
+    readingTimeMinutes: 4,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Echilibrul se observă în modelul general al alimentației, nu în perfecțiunea fiecărei mese.",
+      "Varietatea ajută la acoperirea nevoilor de energie, proteine, fibre, vitamine și minerale.",
+      "O masă practică poate combina legume sau fructe, o sursă de proteine, carbohidrați și o cantitate potrivită de grăsimi.",
+    ],
+    recommendedSlugs: ["proteine-carbohidrati-si-grasimi", "calitatea-alimentelor-vs-numarul-de-calorii"],
+    sources: [
+      { institution: "Organizația Mondială a Sănătății", title: "Healthy diet", year: 2026, type: "Fișă informativă oficială", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+      { institution: "Serviciul Național de Sănătate din Regatul Unit", title: "The Eatwell Guide", year: 2022, type: "Ghid clinic pentru public", url: "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/the-eatwell-guide/" },
+      { institution: "Autoritatea Europeană pentru Siguranța Alimentară", title: "Scientific Opinion on Dietary Reference Values for water", year: 2010, type: "Opinie științifică EFSA", url: "https://www.efsa.europa.eu/en/efsajournal/pub/1459" },
+      { institution: "Organizația Mondială a Sănătății", title: "Carbohydrate intake for adults and children: WHO guideline", year: 2023, type: "Ghid bazat pe dovezi", url: "https://www.who.int/publications/i/item/9789240073593" },
+    ],
+  },
+  {
+    categorySlug: "bazele-alimentatiei",
+    slug: "calitatea-alimentelor-vs-numarul-de-calorii",
+    title: "Calitatea alimentelor vs. numărul de calorii",
+    label: "Bazele alimentației",
+    summary: "De ce energia contează pentru greutate, dar proteinele, fibrele, micronutrienții și sațietatea descriu mai bine calitatea unei alimentații.",
+    readingTimeMinutes: 4,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Balanța energetică influențează greutatea, indiferent din ce alimente provin caloriile.",
+      "Același total caloric poate aduce cantități foarte diferite de proteine, fibre, vitamine și minerale.",
+      "Alegerile utile țin cont simultan de energie, sațietate, nutrienți, porție și dieta în ansamblu.",
+    ],
+    recommendedSlugs: ["caloriile-ce-sunt-si-de-ce-conteaza", "cum-arata-o-alimentatie-echilibrata"],
+    sources: [
+      { institution: "Organizația Mondială a Sănătății", title: "Healthy diet", year: 2026, type: "Fișă informativă oficială", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+      { institution: "Hall KD și colaboratorii · American Journal of Clinical Nutrition", title: "Energy balance and its components: implications for body weight regulation", year: 2012, type: "Review științific indexat în NIH/PMC", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/" },
+      { institution: "Klos B și colaboratorii · European Journal of Nutrition", title: "Impact of energy density on energy intake in children and adults: a systematic review and meta-analysis of randomized controlled trials", year: 2023, type: "Review sistematic și meta-analiză", url: "https://pubmed.ncbi.nlm.nih.gov/36460778/" },
+      { institution: "Hall KD și colaboratorii · Cell Metabolism", title: "Ultra-Processed Diets Cause Excess Calorie Intake and Weight Gain: An Inpatient Randomized Controlled Trial of Ad Libitum Food Intake", year: 2019, type: "Studiu clinic randomizat", url: "https://pubmed.ncbi.nlm.nih.gov/31105044/" },
+    ],
+  },
+  {
+    categorySlug: "alimentatia-de-zi-cu-zi",
+    slug: "cum-iti-organizezi-mesele-intr-o-zi",
+    title: "Cum îți organizezi mesele într-o zi",
+    label: "Alimentația de zi cu zi",
+    summary: "Un mod flexibil de a distribui mesele și gustările în jurul programului tău, fără un număr universal de mese sau ore obligatorii.",
+    readingTimeMinutes: 4,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Nu există un număr magic de mese: două, trei, patru sau mai multe momente alimentare pot funcționa în contexte diferite.",
+      "Aportul total al zilei și o distribuție pe care o poți susține contează mai mult decât respectarea unui orar rigid.",
+      "Mesele și gustările pot fi planificate în jurul programului, foamei și sațietății tale.",
+    ],
+    recommendedSlugs: ["ce-mananci-inainte-si-dupa-antrenament", "cum-mananci-mai-bine-cand-ai-putin-timp"],
+    sources: [
+      { institution: "Raynor HA și colaboratorii · Frontiers in Nutrition", title: "Eating Frequency, Food Intake, and Weight: A Systematic Review of Human and Animal Experimental Studies", year: 2015, type: "Review sistematic", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4683169/" },
+      { institution: "Canuto R și colaboratorii · Public Health Nutrition", title: "Eating frequency and weight and body composition: a systematic review of observational studies", year: 2017, type: "Review sistematic", url: "https://pubmed.ncbi.nlm.nih.gov/28578730/" },
+      { institution: "Serviciul Național de Sănătate din Regatul Unit", title: "The Eatwell Guide", year: 2022, type: "Ghid clinic pentru public", url: "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/the-eatwell-guide/" },
+      { institution: "Organizația Mondială a Sănătății", title: "Healthy diet", year: 2026, type: "Fișă informativă oficială", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+    ],
+  },
+  {
+    categorySlug: "alimentatia-de-zi-cu-zi",
+    slug: "ce-mananci-inainte-si-dupa-antrenament",
+    title: "Ce mănânci înainte și după antrenament",
+    label: "Alimentația de zi cu zi",
+    summary: "Repere simple pentru energie, confort digestiv și recuperare, fără cronometrarea obsesivă a meselor din jurul antrenamentului.",
+    readingTimeMinutes: 4,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Înainte de antrenament, contează să ai energie și să alegi alimente pe care le tolerezi bine.",
+      "După antrenament, proteinele și carbohidrații susțin refacerea, dar contextul întregii zile rămâne important.",
+      "Nu există, în mod obișnuit, o fereastră de câteva minute după care progresul este pierdut.",
+    ],
+    recommendedSlugs: ["cum-iti-organizezi-mesele-intr-o-zi", "gustarile-cand-ajuta-si-cand-adauga-calorii"],
+    sources: [
+      { institution: "Kerksick CM și colaboratorii · International Society of Sports Nutrition", title: "International society of sports nutrition position stand: nutrient timing", year: 2017, type: "Poziție profesională bazată pe dovezi", url: "https://pubmed.ncbi.nlm.nih.gov/28919842/" },
+      { institution: "Jäger R și colaboratorii · International Society of Sports Nutrition", title: "International Society of Sports Nutrition Position Stand: protein and exercise", year: 2017, type: "Poziție profesională bazată pe dovezi", url: "https://pubmed.ncbi.nlm.nih.gov/28642676/" },
+      { institution: "Aragon AA și Schoenfeld BJ · Journal of the International Society of Sports Nutrition", title: "Nutrient timing revisited: is there a post-exercise anabolic window?", year: 2013, type: "Review științific", url: "https://pubmed.ncbi.nlm.nih.gov/23360586/" },
+      { institution: "Academy of Nutrition and Dietetics, Dietitians of Canada și American College of Sports Medicine", title: "Nutrition and Athletic Performance", year: 2016, type: "Poziție comună profesională", url: "https://pubmed.ncbi.nlm.nih.gov/26920240/" },
+    ],
+  },
+  {
+    categorySlug: "alimentatia-de-zi-cu-zi",
+    slug: "gustarile-cand-ajuta-si-cand-adauga-calorii",
+    title: "Gustările: când ajută și când sunt doar calorii în plus",
+    label: "Alimentația de zi cu zi",
+    summary: "Cum diferențiezi o gustare utilă și planificată de mâncatul automat și cum alegi porții potrivite contextului tău.",
+    readingTimeMinutes: 4,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Gustările nu sunt implicit bune sau rele; utilitatea lor depinde de foame, program, activitate și aportul total.",
+      "O gustare planificată răspunde unui motiv clar, în timp ce mâncatul automat poate adăuga energie fără să rezolve foamea.",
+      "Proteinele, fibrele și o porție potrivită pot face o gustare mai sățioasă.",
+    ],
+    recommendedSlugs: ["cum-iti-organizezi-mesele-intr-o-zi", "cum-mananci-mai-bine-cand-ai-putin-timp"],
+    sources: [
+      { institution: "Organizația Mondială a Sănătății", title: "Healthy diet", year: 2026, type: "Fișă informativă oficială", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+      { institution: "Serviciul Național de Sănătate din Regatul Unit", title: "Eating a balanced diet", year: 2026, type: "Ghid clinic pentru public", url: "https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/eating-a-balanced-diet/" },
+      { institution: "Clark MJ și Slavin JL · Journal of the American College of Nutrition", title: "The effect of fiber on satiety and food intake: a systematic review", year: 2013, type: "Review sistematic", url: "https://pubmed.ncbi.nlm.nih.gov/23885994/" },
+      { institution: "Raynor HA și colaboratorii · Frontiers in Nutrition", title: "Eating Frequency, Food Intake, and Weight: A Systematic Review of Human and Animal Experimental Studies", year: 2015, type: "Review sistematic", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4683169/" },
+    ],
+  },
+  {
+    categorySlug: "alimentatia-de-zi-cu-zi",
+    slug: "cum-mananci-mai-bine-cand-ai-putin-timp",
+    title: "Cum mănânci mai bine când ai puțin timp",
+    label: "Alimentația de zi cu zi",
+    summary: "Soluții realiste pentru cumpărături, ingrediente de bază și mese rapide atunci când programul nu lasă loc pentru gătit elaborat.",
+    readingTimeMinutes: 4,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "O listă scurtă de alimente de bază reduce numărul deciziilor pe care trebuie să le iei într-o zi aglomerată.",
+      "Legumele congelate, conservele potrivite și unele produse gata de consum pot susține o alimentație echilibrată.",
+      "O soluție suficient de bună și repetabilă este adesea mai utilă decât un plan complicat pe care nu îl poți urma.",
+    ],
+    recommendedSlugs: ["cum-iti-organizezi-mesele-intr-o-zi", "gustarile-cand-ajuta-si-cand-adauga-calorii"],
+    sources: [
+      { institution: "Organizația Mondială a Sănătății", title: "Healthy diet", year: 2026, type: "Fișă informativă oficială", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+      { institution: "Serviciul Național de Sănătate din Regatul Unit", title: "Eating a balanced diet", year: 2026, type: "Ghid clinic pentru public", url: "https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/eating-a-balanced-diet/" },
+      { institution: "Serviciul Național de Sănătate din Regatul Unit", title: "5 A Day: what counts?", year: 2026, type: "Ghid clinic pentru public", url: "https://www.nhs.uk/live-well/eat-well/5-a-day/5-a-day-what-counts/" },
+      { institution: "Serviciul Național de Sănătate din Regatul Unit", title: "8 tips for healthy eating", year: 2022, type: "Ghid practic pentru public", url: "https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/eight-tips-for-healthy-eating/" },
+    ],
+  },
+  {
+    categorySlug: "alimentatia-pentru-obiectiv",
+    slug: "deficitul-caloric-pentru-slabire",
+    title: "Deficitul caloric pentru slăbire",
+    label: "Alimentația pentru obiectiv",
+    summary: "Cum funcționează deficitul energetic, de ce cântarul fluctuează și cum poți urmări o tendință fără restricții extreme sau reguli universale.",
+    readingTimeMinutes: 4,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Scăderea în greutate necesită, în timp, ca organismul să folosească mai multă energie decât primește din alimentație.",
+      "O singură cântărire poate reflecta apă, glicogen și conținut digestiv, nu doar schimbarea țesutului adipos.",
+      "Un deficit sustenabil păstrează loc pentru proteine, fibre, mișcare și o relație echilibrată cu alimentația.",
+    ],
+    recommendedSlugs: ["cum-ajustezi-alimentatia-cand-progresul-se-opreste", "mentinerea-greutatii-si-a-formei"],
+    sources: [
+      { institution: "Hall KD și colaboratorii · American Journal of Clinical Nutrition", title: "Energy balance and its components: implications for body weight regulation", year: 2012, type: "Review științific", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/" },
+      { institution: "Manore MM · Sports Medicine", title: "Weight Management for Athletes and Active Individuals: A Brief Review", year: 2015, type: "Review științific", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4672016/" },
+      { institution: "Organizația Mondială a Sănătății", title: "Healthy diet", year: 2026, type: "Fișă informativă oficială", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+      { institution: "Morton RW și colaboratorii · British Journal of Sports Medicine", title: "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults", year: 2018, type: "Review sistematic și meta-analiză", url: "https://pubmed.ncbi.nlm.nih.gov/28698222/" },
+    ],
+  },
+  {
+    categorySlug: "alimentatia-pentru-obiectiv",
+    slug: "surplusul-caloric-pentru-masa-musculara",
+    title: "Surplusul caloric pentru masă musculară",
+    label: "Alimentația pentru obiectiv",
+    summary: "Diferența dintre simpla creștere în greutate și dezvoltarea masei musculare, plus rolul antrenamentului, proteinelor și unui surplus controlat.",
+    readingTimeMinutes: 5,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Surplusul oferă energie suplimentară, dar antrenamentul de rezistență este stimulul care orientează adaptarea musculară.",
+      "Mai multă energie nu produce automat mai mult mușchi, iar un surplus mare poate crește mai ales acumularea de țesut adipos.",
+      "Lean bulk și dirty bulk sunt termeni informali; VEMI preferă formulările surplus controlat și surplus agresiv.",
+    ],
+    recommendedSlugs: ["mentinerea-greutatii-si-a-formei", "cum-ajustezi-alimentatia-cand-progresul-se-opreste"],
+    sources: [
+      { institution: "Slater GJ și colaboratorii · Frontiers in Nutrition", title: "Is an Energy Surplus Required to Maximize Skeletal Muscle Hypertrophy Associated With Resistance Training", year: 2019, type: "Review științific", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6710320/" },
+      { institution: "Helms ER și colaboratorii · Sports Medicine - Open", title: "Effect of Small and Large Energy Surpluses on Strength, Muscle, and Skinfold Thickness in Resistance-Trained Individuals: A Parallel Groups Design", year: 2023, type: "Studiu controlat", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10620361/" },
+      { institution: "Morton RW și colaboratorii · British Journal of Sports Medicine", title: "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults", year: 2018, type: "Review sistematic și meta-analiză", url: "https://pubmed.ncbi.nlm.nih.gov/28698222/" },
+      { institution: "Ribeiro AS și colaboratorii · European Journal of Sport Science", title: "Effects of Different Dietary Energy Intake Following Resistance Training on Muscle Mass and Body Fat in Bodybuilders: A Pilot Study", year: 2019, type: "Studiu de intervenție", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6942464/" },
+    ],
+  },
+  {
+    categorySlug: "alimentatia-pentru-obiectiv",
+    slug: "mentinerea-greutatii-si-a-formei",
+    title: "Menținerea greutății și a formei",
+    label: "Alimentația pentru obiectiv",
+    summary: "De ce menținerea este un obiectiv valid și cum poți păstra un interval stabil de greutate, performanța și obiceiurile fără rigiditate.",
+    readingTimeMinutes: 4,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Menținerea înseamnă echilibru energetic aproximativ pe termen lung, nu aceeași cifră pe cântar în fiecare dimineață.",
+      "Un interval de greutate este mai realist decât un singur număr fix și lasă loc fluctuațiilor normale.",
+      "Obiceiurile sustenabile, activitatea și ajustările mici pot susține greutatea, masa musculară și performanța.",
+    ],
+    recommendedSlugs: ["deficitul-caloric-pentru-slabire", "surplusul-caloric-pentru-masa-musculara"],
+    sources: [
+      { institution: "Hall KD și colaboratorii · American Journal of Clinical Nutrition", title: "Energy balance and its components: implications for body weight regulation", year: 2012, type: "Review științific", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/" },
+      { institution: "Hall KD și Kahan S · Medical Clinics of North America", title: "Maintenance of Lost Weight and Long-Term Management of Obesity", year: 2018, type: "Review clinic", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5764193/" },
+      { institution: "Manore MM · Sports Medicine", title: "Weight Management for Athletes and Active Individuals: A Brief Review", year: 2015, type: "Review științific", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4672016/" },
+      { institution: "Organizația Mondială a Sănătății", title: "Healthy diet", year: 2026, type: "Fișă informativă oficială", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+    ],
+  },
+  {
+    categorySlug: "alimentatia-pentru-obiectiv",
+    slug: "cum-ajustezi-alimentatia-cand-progresul-se-opreste",
+    title: "Cum ajustezi alimentația când progresul se oprește",
+    label: "Alimentația pentru obiectiv",
+    summary: "Cum diferențiezi fluctuațiile normale de o stagnare reală și ce verifici înaintea unei ajustări mici, fără concluzii pripite sau mituri metabolice.",
+    readingTimeMinutes: 5,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Câteva zile sau o singură săptămână fără schimbare nu demonstrează automat existența unui platou.",
+      "Apa, glicogenul, digestia, sodiul, activitatea și consecvența pot modifica temporar ceea ce arată cântarul.",
+      "După o perioadă suficientă și măsurători comparabile, ajustările mici sunt de obicei mai ușor de evaluat decât schimbările radicale.",
+    ],
+    recommendedSlugs: ["deficitul-caloric-pentru-slabire", "mentinerea-greutatii-si-a-formei"],
+    sources: [
+      { institution: "Hall KD · Obesity", title: "Physiology of the Weight Loss Plateau after Calorie Restriction, GLP-1 Receptor Agonism, and Bariatric Surgery", year: 2024, type: "Analiză fiziologică", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11132924/" },
+      { institution: "Thomas DM și colaboratorii · American Journal of Clinical Nutrition", title: "Effect of dietary adherence on the body weight plateau: a mathematical model incorporating intermittent compliance with energy intake prescription", year: 2014, type: "Model și analiză științifică", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC4135489/" },
+      { institution: "Müller MJ și colaboratorii · Current Obesity Reports", title: "Changes in Energy Expenditure with Weight Gain and Weight Loss in Humans", year: 2016, type: "Review științific", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5097076/" },
+      { institution: "Hall KD și Kahan S · Medical Clinics of North America", title: "Maintenance of Lost Weight and Long-Term Management of Obesity", year: 2018, type: "Review clinic", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5764193/" },
+    ],
+  },
+  {
+    categorySlug: "retete-simple",
+    slug: "10-retete-simple-pentru-slabire",
+    title: "10 rețete simple pentru slăbire",
+    label: "Rețete simple",
+    summary: "Zece mese și gustări practice, cu porții normale, proteine, fibre și ingrediente accesibile, pe care le poți integra într-un aport adaptat obiectivului tău.",
+    readingTimeMinutes: 7,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "O singură rețetă nu produce slăbire; contează balanța energetică și alimentația totală în timp.",
+      "Proteinele, fibrele, legumele și porțiile rezonabile pot face mesele mai sățioase fără restricții extreme.",
+      "Valorile nutriționale sunt estimări per porție și trebuie adaptate produselor și cantităților folosite în realitate.",
+    ],
+    recommendedSlugs: ["10-retete-simple-pentru-masa-musculara", "10-retete-simple-pentru-mentinere"],
+    sources: [
+      { institution: "Organizația Mondială a Sănătății", title: "Healthy diet", year: 2026, type: "Fișă informativă oficială", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+      { institution: "Centers for Disease Control and Prevention", title: "Tips for Increasing Vegetables and Fruits in Your Diet", year: 2026, type: "Ghid oficial pentru public", url: "https://www.cdc.gov/healthy-weight-growth/healthy-eating/fruits-vegetables.html" },
+      { institution: "Serviciul Național de Sănătate din Regatul Unit", title: "The Eatwell Guide", year: 2022, type: "Ghid clinic pentru public", url: "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/the-eatwell-guide/" },
+      { institution: "Hall KD și colaboratorii · American Journal of Clinical Nutrition", title: "Energy balance and its components: implications for body weight regulation", year: 2012, type: "Review științific", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/" },
+    ],
+  },
+  {
+    categorySlug: "retete-simple",
+    slug: "10-retete-simple-pentru-masa-musculara",
+    title: "10 rețete simple pentru masă musculară",
+    label: "Rețete simple",
+    summary: "Zece mese consistente care pot susține aportul energetic și proteic, fără suplimente obligatorii sau surplusuri calorice exagerate.",
+    readingTimeMinutes: 7,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Mesele sunt exemple, iar necesarul energetic și dimensiunea porțiilor diferă de la o persoană la alta.",
+      "Un surplus foarte mare nu garantează mai mult mușchi; antrenamentul, proteinele și recuperarea rămân esențiale.",
+      "Rețetele folosesc alimente obișnuite și nu depind de pudră proteică sau de un singur tip de carne.",
+    ],
+    recommendedSlugs: ["10-retete-simple-pentru-slabire", "10-retete-simple-pentru-mentinere"],
+    sources: [
+      { institution: "Jäger R și colaboratorii · International Society of Sports Nutrition", title: "International Society of Sports Nutrition Position Stand: protein and exercise", year: 2017, type: "Poziție profesională bazată pe dovezi", url: "https://pubmed.ncbi.nlm.nih.gov/28642676/" },
+      { institution: "Slater GJ și colaboratorii · Frontiers in Nutrition", title: "Is an Energy Surplus Required to Maximize Skeletal Muscle Hypertrophy Associated With Resistance Training", year: 2019, type: "Review științific", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC6710320/" },
+      { institution: "Morton RW și colaboratorii · British Journal of Sports Medicine", title: "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults", year: 2018, type: "Review sistematic și meta-analiză", url: "https://pubmed.ncbi.nlm.nih.gov/28698222/" },
+      { institution: "Organizația Mondială a Sănătății", title: "Healthy diet", year: 2026, type: "Fișă informativă oficială", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+    ],
+  },
+  {
+    categorySlug: "retete-simple",
+    slug: "10-retete-simple-pentru-mentinere",
+    title: "10 rețete simple pentru menținere",
+    label: "Rețete simple",
+    summary: "Zece rețete echilibrate, variate și ușor de repetat într-o alimentație obișnuită, cu porții care pot fi ajustate vieții reale.",
+    readingTimeMinutes: 7,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Menținerea este un obiectiv valid, nu doar o pauză între slăbire și creștere în greutate.",
+      "Echilibrul se construiește pe parcursul zilelor și săptămânilor, nu prin perfecțiunea fiecărei mese.",
+      "Rețetele oferă structură, iar porțiile se ajustează după activitate, foame, preferințe și evoluția greutății.",
+    ],
+    recommendedSlugs: ["10-retete-simple-pentru-slabire", "10-retete-simple-pentru-masa-musculara"],
+    sources: [
+      { institution: "Organizația Mondială a Sănătății", title: "Healthy diet", year: 2026, type: "Fișă informativă oficială", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+      { institution: "Serviciul Național de Sănătate din Regatul Unit", title: "The Eatwell Guide", year: 2022, type: "Ghid clinic pentru public", url: "https://www.nhs.uk/live-well/eat-well/food-guidelines-and-food-labels/the-eatwell-guide/" },
+      { institution: "Centers for Disease Control and Prevention", title: "Tips for Maintaining Healthy Weight", year: 2026, type: "Ghid oficial pentru public", url: "https://www.cdc.gov/healthy-weight-growth/about/tips-for-balancing-food-activity.html" },
+      { institution: "Hall KD și colaboratorii · American Journal of Clinical Nutrition", title: "Energy balance and its components: implications for body weight regulation", year: 2012, type: "Review științific", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3302369/" },
+    ],
+  },
+  {
+    categorySlug: "restrictii-si-intolerante",
+    slug: "intoleranta-la-lactoza-si-alimentatia",
+    title: "Intoleranța la lactoză și alimentația",
+    label: "Restricții și intoleranțe",
+    summary: "Ce înseamnă intoleranța la lactoză, cum diferă de alergia la proteinele din lapte și cum poate fi adaptată prudent alimentația fără eliminări inutile.",
+    readingTimeMinutes: 5,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Intoleranța la lactoză este o problemă de digestie și nu este același lucru cu alergia la proteinele din lapte.",
+      "Balonarea, gazele sau durerea abdominală sunt simptome nespecifice și nu confirmă singure un diagnostic.",
+      "Toleranța diferă între persoane, iar multe persoane pot consuma anumite cantități sau produse cu mai puțină lactoză.",
+    ],
+    recommendedSlugs: ["dietele-restrictive-si-riscul-de-carente", "glutenul-si-alimentatia-fara-gluten"],
+    sources: [
+      { institution: "National Institute of Diabetes and Digestive and Kidney Diseases", title: "Lactose Intolerance", year: 2018, type: "Ghid medical oficial", url: "https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance" },
+      { institution: "National Institute of Diabetes and Digestive and Kidney Diseases", title: "Eating, Diet, & Nutrition for Lactose Intolerance", year: 2018, type: "Ghid medical oficial", url: "https://www.niddk.nih.gov/health-information/digestive-diseases/lactose-intolerance/eating-diet-nutrition" },
+      { institution: "Serviciul Național de Sănătate din Regatul Unit", title: "Lactose intolerance", year: 2023, type: "Ghid clinic pentru public", url: "https://www.nhs.uk/conditions/lactose-intolerance/" },
+      { institution: "Autoritatea Europeană pentru Siguranța Alimentară", title: "Scientific Opinion on lactose thresholds in lactose intolerance and galactosaemia", year: 2010, type: "Opinie științifică EFSA", url: "https://www.efsa.europa.eu/en/efsajournal/pub/1777" },
+    ],
+  },
+  {
+    categorySlug: "restrictii-si-intolerante",
+    slug: "glutenul-si-alimentatia-fara-gluten",
+    title: "Glutenul și alimentația fără gluten",
+    label: "Restricții și intoleranțe",
+    summary: "Ce este glutenul, când eliminarea lui are indicație medicală și cum citești etichetele europene fără a considera produsele fără gluten automat mai sănătoase.",
+    readingTimeMinutes: 5,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Boala celiacă, alergia la grâu și alte reacții legate de grâu sau gluten nu sunt același lucru.",
+      "Dacă suspectezi boala celiacă, discută despre testare cu medicul înainte să începi o dietă fără gluten.",
+      "Fără gluten nu înseamnă automat mai sănătos sau mai potrivit pentru slăbire în populația generală.",
+    ],
+    recommendedSlugs: ["dietele-restrictive-si-riscul-de-carente", "intoleranta-la-lactoza-si-alimentatia"],
+    sources: [
+      { institution: "National Institute of Diabetes and Digestive and Kidney Diseases", title: "Eating, Diet, & Nutrition for Celiac Disease", year: 2020, type: "Ghid medical oficial", url: "https://www.niddk.nih.gov/health-information/digestive-diseases/celiac-disease/eating-diet-nutrition" },
+      { institution: "National Institute of Diabetes and Digestive and Kidney Diseases", title: "Diagnosis of Celiac Disease", year: 2020, type: "Ghid medical oficial", url: "https://www.niddk.nih.gov/health-information/digestive-diseases/celiac-disease/diagnosis" },
+      { institution: "Comisia Europeană", title: "Gluten-free food", year: 2026, type: "Cadru oficial de etichetare UE", url: "https://food.ec.europa.eu/food-safety/labelling-and-nutrition/specific-groups/gluten-free-food_en" },
+      { institution: "EUR-Lex", title: "Commission Implementing Regulation (EU) No 828/2014", year: 2014, type: "Legislație a Uniunii Europene", url: "https://eur-lex.europa.eu/eli/reg_impl/2014/828/oj" },
+    ],
+  },
+  {
+    categorySlug: "restrictii-si-intolerante",
+    slug: "alergii-alimentare-ce-trebuie-sa-ai-in-vedere",
+    title: "Alergii alimentare: ce trebuie să ai în vedere",
+    label: "Restricții și intoleranțe",
+    summary: "Diferența dintre alergie și intoleranță, citirea etichetelor în Uniunea Europeană, contactul încrucișat și situațiile care necesită ajutor medical urgent.",
+    readingTimeMinutes: 5,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "Alergia alimentară implică sistemul imunitar și este diferită de intoleranța alimentară.",
+      "Pentru un alergen diagnosticat, siguranța înseamnă etichete verificate, evitarea expunerii și respectarea planului medical individual.",
+      "O reacție alergică severă sau suspiciunea de anafilaxie necesită imediat asistență medicală de urgență.",
+    ],
+    recommendedSlugs: ["dietele-restrictive-si-riscul-de-carente", "intoleranta-la-lactoza-si-alimentatia"],
+    sources: [
+      { institution: "Serviciul Național de Sănătate din Regatul Unit", title: "Food allergy", year: 2022, type: "Ghid clinic pentru public", url: "https://www.nhs.uk/conditions/food-allergy/" },
+      { institution: "Comisia Europeană", title: "Allergies", year: 2026, type: "Ghid oficial privind etichetarea UE", url: "https://food.ec.europa.eu/food-safety/campaign-2026/allergies_en" },
+      { institution: "Autoritatea Europeană pentru Siguranța Alimentară", title: "Food allergens", year: 2025, type: "Material oficial EFSA", url: "https://www.efsa.europa.eu/en/safe2eat/food-allergens" },
+      { institution: "EUR-Lex", title: "Regulation (EU) No 1169/2011 on the provision of food information to consumers", year: 2011, type: "Legislație a Uniunii Europene", url: "https://eur-lex.europa.eu/eli/reg/2011/1169/oj" },
+    ],
+  },
+  {
+    categorySlug: "restrictii-si-intolerante",
+    slug: "dietele-restrictive-si-riscul-de-carente",
+    title: "Dietele restrictive și riscul de carențe",
+    label: "Restricții și intoleranțe",
+    summary: "Cum păstrezi adecvarea nutrițională atunci când elimini alimente din motive medicale, etice, culturale sau personale, fără alarmism și reguli universale.",
+    readingTimeMinutes: 5,
+    status: "published",
+    legacySlugs: [],
+    takeaways: [
+      "O dietă restrictivă nu este automat nesănătoasă, dar eliminarea mai multor surse alimentare cere mai multă planificare.",
+      "Riscul depinde de alimentele eliminate, înlocuitorii aleși, varietatea rămasă și contextul fiecărei persoane.",
+      "Alimentele alternative și fortificate pot ajuta, iar suplimentarea se decide după evaluare profesională, nu după presupuneri.",
+    ],
+    recommendedSlugs: ["glutenul-si-alimentatia-fara-gluten", "intoleranta-la-lactoza-si-alimentatia"],
+    sources: [
+      { institution: "Organizația Mondială a Sănătății", title: "Healthy diet", year: 2026, type: "Fișă informativă oficială", url: "https://www.who.int/news-room/fact-sheets/detail/healthy-diet" },
+      { institution: "Serviciul Național de Sănătate din Regatul Unit", title: "The vegan diet", year: 2022, type: "Ghid clinic pentru public", url: "https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/the-vegan-diet/" },
+      { institution: "Serviciul Național de Sănătate din Regatul Unit", title: "The vegetarian diet", year: 2022, type: "Ghid clinic pentru public", url: "https://www.nhs.uk/live-well/eat-well/how-to-eat-a-balanced-diet/the-vegetarian-diet/" },
+      { institution: "Autoritatea Europeană pentru Siguranța Alimentară", title: "Dietary Reference Values for nutrients: Summary report", year: 2017, type: "Raport științific EFSA", url: "https://www.efsa.europa.eu/en/supporting/pub/e15121" },
+    ],
+  },
+];
+
+export function getNutritionCategory(slug: string) {
+  return nutritionCategories.find((category) => category.slug === slug);
+}
+
+export function getNutritionCategoryArticles(categorySlug: NutritionCategorySlug) {
+  return nutritionArticles.filter(
+    (article) => article.categorySlug === categorySlug && article.status === "published",
+  );
+}
+
+export function getNutritionArticle(categorySlug: string, articleSlug: string) {
+  return nutritionArticles.find(
+    (article) => article.categorySlug === categorySlug && article.slug === articleSlug,
+  );
+}
+
+export function getPublishedNutritionArticles(categorySlug?: NutritionCategorySlug) {
+  return nutritionArticles.filter(
+    (article) => article.status === "published" && (!categorySlug || article.categorySlug === categorySlug),
+  );
+}
+
+export function getNutritionCategoryAvailability(categorySlug: NutritionCategorySlug) {
+  if (categorySlug === "calculator-caloric") return "Calculator disponibil";
+  const count = getNutritionCategoryArticles(categorySlug).length;
+  return count === 1 ? "1 articol" : count > 1 ? `${count} articole` : "În pregătire";
+}

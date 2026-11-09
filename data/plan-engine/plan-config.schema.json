@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://vemi.ro/schemas/plan-config.schema.json",
+  "title": "VEMI Plan Configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "configuration_key", "profile", "number_of_weeks", "metadata", "weeks"],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "configuration_key": { "type": "string", "pattern": "^plan:v1:(male|female):(18_29|30_44|45_59|60_plus):(weight_loss|muscle_gain|general_fitness):(home|gym):(beginner|intermediate|advanced):[1-7]$" },
+    "profile": { "$ref": "#/$defs/profile" },
+    "number_of_weeks": { "type": "integer", "minimum": 1 },
+    "metadata": { "$ref": "#/$defs/metadata" },
+    "weeks": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/week" } }
+  },
+  "$defs": {
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["gender", "age_group", "goal", "location", "level", "days_per_week"],
+      "properties": {
+        "gender": { "enum": ["male", "female"] },
+        "age_group": { "enum": ["18_29", "30_44", "45_59", "60_plus"] },
+        "goal": { "enum": ["weight_loss", "muscle_gain", "general_fitness"] },
+        "location": { "enum": ["home", "gym"] },
+        "level": { "enum": ["beginner", "intermediate", "advanced"] },
+        "days_per_week": { "type": "integer", "minimum": 1, "maximum": 7 }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["title", "summary", "language", "content_status"],
+      "properties": {
+        "title": { "type": "string", "minLength": 1 },
+        "summary": { "type": "string", "minLength": 1 },
+        "language": { "type": "string", "minLength": 2 },
+        "content_status": { "enum": ["mock", "draft", "published"] },
+        "source_reference": { "type": "string" },
+        "import_batch": { "type": "string" }
+      }
+    },
+    "week": {
+      "type": "object",
+      "required": ["week_number", "display_label", "progression", "days"],
+      "properties": {
+        "week_number": { "type": "integer", "minimum": 1 },
+        "display_label": { "type": "string", "minLength": 1 },
+        "progression": { "type": "object", "required": ["summary"], "properties": { "summary": { "type": "string", "minLength": 1 }, "load_guidance": { "type": "string" } } },
+        "days": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/day" } }
+      }
+    },
+    "day": {
+      "type": "object",
+      "required": ["day_number", "display_label", "title", "exercises"],
+      "properties": {
+        "day_number": { "type": "integer", "minimum": 1 },
+        "display_label": { "type": "string", "minLength": 1 },
+        "title": { "type": "string", "minLength": 1 },
+        "focus": { "type": "string" },
+        "estimated_minutes": { "type": "integer", "minimum": 1 },
+        "instructions": { "type": "string" },
+        "exercises": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/exercise" } }
+      }
+    },
+    "exercise": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["order", "exercise_key", "sets", "target", "rest_seconds"],
+      "properties": {
+        "order": { "type": "integer", "minimum": 1 },
+        "exercise_key": { "type": "string", "pattern": "^[a-z0-9]+(?:[_-][a-z0-9]+)*$" },
+        "sets": { "type": "integer", "minimum": 1 },
+        "target": { "$ref": "#/$defs/target" },
+        "rest_seconds": { "type": "integer", "minimum": 0 },
+        "instructions": { "type": "string" },
+        "metadata": { "type": "object" }
+      }
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "min", "max"],
+      "properties": {
+        "kind": { "enum": ["repetitions", "duration_seconds"] },
+        "min": { "type": "integer", "minimum": 1 },
+        "max": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

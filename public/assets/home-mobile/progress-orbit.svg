@@ -1,0 +1,8 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Progress Orbit" opacity="0.82">
+<path id="Vector" d="M46 81C65.33 81 81 65.33 81 46C81 26.67 65.33 11 46 11C26.67 11 11 26.67 11 46C11 65.33 26.67 81 46 81Z" stroke="#0A5130" stroke-width="1.5"/>
+<path id="Vector_2" d="M46 70C59.2548 70 70 59.2548 70 46C70 32.7452 59.2548 22 46 22C32.7452 22 22 32.7452 22 46C22 59.2548 32.7452 70 46 70Z" stroke="#B8D56E" stroke-width="1.5" stroke-dasharray="3 4"/>
+<path id="Vector_3" d="M69 28C72.3137 28 75 25.3137 75 22C75 18.6863 72.3137 16 69 16C65.6863 16 63 18.6863 63 22C63 25.3137 65.6863 28 69 28Z" fill="#C4E836"/>
+<path id="Vector_4" d="M22 68C25.866 68 29 64.866 29 61C29 57.134 25.866 54 22 54C18.134 54 15 57.134 15 61C15 64.866 18.134 68 22 68Z" fill="#0A5130"/>
+</g>
+</svg>

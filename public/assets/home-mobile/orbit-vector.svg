@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="174" height="174" viewBox="0 0 174 174" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Orbit Vector">
+<path id="Vector" d="M87 156C125.108 156 156 125.108 156 87C156 48.8924 125.108 18 87 18C48.8924 18 18 48.8924 18 87C18 125.108 48.8924 156 87 156Z" stroke="#0B5231" stroke-width="1.5"/>
+<path id="Vector_2" d="M87 134C112.957 134 134 112.957 134 87C134 61.0426 112.957 40 87 40C61.0426 40 40 61.0426 40 87C40 112.957 61.0426 134 87 134Z" stroke="#0B5231" stroke-width="1.2" stroke-dasharray="2 5"/>
+<path id="Vector_3" d="M29 102C44 45 111 23 143 73" stroke="#0B5231" stroke-width="1.4" stroke-linecap="round"/>
+<path id="Vector_4" d="M38 130C72 83 119 82 145 101" stroke="#A7D63A" stroke-width="1.5" stroke-linecap="round"/>
+<path id="Vector_5" d="M29 112C34.5228 112 39 107.523 39 102C39 96.4772 34.5228 92 29 92C23.4772 92 19 96.4772 19 102C19 107.523 23.4772 112 29 112Z" fill="#B8DE39" stroke="#0B5231" stroke-width="1.5"/>
+<path id="Vector_6" d="M143 81C147.418 81 151 77.4183 151 73C151 68.5817 147.418 65 143 65C138.582 65 135 68.5817 135 73C135 77.4183 138.582 81 143 81Z" fill="#0B5231"/>
+<path id="Vector_7" d="M86 26C90.4183 26 94 22.4183 94 18C94 13.5817 90.4183 10 86 10C81.5817 10 78 13.5817 78 18C78 22.4183 81.5817 26 86 26Z" fill="#A9D834" stroke="#0B5231" stroke-width="1.4"/>
+</g>
+</svg>

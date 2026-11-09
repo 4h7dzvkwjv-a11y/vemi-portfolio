@@ -1,0 +1,22 @@
+import { RecipeBlock } from "@/components/editorial/recipe-block";
+import { maintenanceRecipes } from "@/content/alimentatie/recipes";
+
+## Cum folosești aceste rețete
+
+Menținerea este un obiectiv în sine, nu doar o pauză între slăbire și creștere în greutate. Rețetele de mai jos oferă mese normale, variate și ușor de repetat: opțiuni reci și calde, surse animale și vegetale de proteine, cereale, leguminoase, fructe și legume.
+
+Nu este nevoie ca fiecare farfurie să fie identică sau perfectă. Echilibrul se observă în ansamblul zilelor și săptămânilor. Porțiile pot fi mărite sau reduse în funcție de foame, activitate, evoluția greutății și preferințe, fără ca rețeta să devină „greșită”.
+
+## Cele 10 rețete
+
+{maintenanceRecipes.map((recipe) => <RecipeBlock key={recipe.number} {...recipe} />)}
+
+**Notă privind estimările nutriționale:** valorile sunt orientative și pot varia în funcție de marca produselor, cantitățile reale, metoda de preparare și substituțiile făcute. Caloriile și proteinele sunt afișate per porție, iar ingredientele cu cantități variabile trebuie verificate și pe eticheta produsului folosit.
+
+## Când merită să discuți cu un nutriționist
+
+Poate fi util să discuți cu un nutriționist dacă greutatea variază mult și nu înțelegi de ce, dacă vrei să păstrezi performanța în perioade solicitante, dacă ai restricții alimentare sau dacă porțiile potrivite sunt greu de estimat. Sportivii de performanță și persoanele cu nevoi speciale pot avea nevoie de o strategie mai precisă. Pentru probleme medicale sau simptome persistente, cere și evaluare medicală.
+
+## Ideea de reținut
+
+Menținerea se sprijină pe mese suficient de flexibile încât să poată fi repetate; rețetele oferă o structură, iar porțiile și combinațiile se adaptează vieții reale.

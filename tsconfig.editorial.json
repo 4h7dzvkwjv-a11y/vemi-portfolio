@@ -1,0 +1,22 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "incremental": false
+  },
+  "include": [
+    "types/**/*.d.ts",
+    "lib/editorial/**/*.ts",
+    "components/editorial/**/*.tsx",
+    "content/alimentatie/**/*.ts",
+    "content/alimentatie/**/*.tsx",
+    "content/alimentatie/**/*.mdx",
+    "content/stil-de-viata/catalog.ts",
+    "content/stil-de-viata/content-registry.ts",
+    "app/alimentatie/**/*.ts",
+    "app/alimentatie/**/*.tsx",
+    "app/stil-de-viata/**/*.ts",
+    "app/stil-de-viata/**/*.tsx"
+  ],
+  "exclude": ["node_modules", "dist", ".next"]
+}

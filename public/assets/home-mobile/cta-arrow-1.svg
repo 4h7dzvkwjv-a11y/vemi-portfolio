@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<foreignObject x="-8" y="-8" width="48" height="48"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(4px);clip-path:url(#bgblur_1_0_24_clip_path);height:100%;width:100%"></div></foreignObject><g id="CTA Arrow" data-figma-bg-blur-radius="8">
+<g clip-path="url(#clip0_0_24)">
+<rect width="32" height="32" rx="16" fill="white" fill-opacity="0.36"/>
+<path id="Vector" d="M16 31.1111C24.3456 31.1111 31.1111 24.3456 31.1111 16C31.1111 7.65436 24.3456 0.888889 16 0.888889C7.65436 0.888889 0.888889 7.65436 0.888889 16C0.888889 24.3456 7.65436 31.1111 16 31.1111Z" stroke="#0B2117" stroke-width="1.5"/>
+<path id="Vector_2" d="M9.77778 16H22.2222M17.7778 20.4444L22.2222 16L17.7778 11.5556" stroke="#0B2117" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<rect x="0.5" y="0.5" width="31" height="31" rx="15.5" stroke="white" stroke-opacity="0.72"/>
+</g>
+<defs>
+<clipPath id="bgblur_1_0_24_clip_path" transform="translate(8 8)"><rect width="32" height="32" rx="16"/>
+</clipPath><clipPath id="clip0_0_24">
+<rect width="32" height="32" rx="16" fill="white"/>
+</clipPath>
+</defs>
+</svg>

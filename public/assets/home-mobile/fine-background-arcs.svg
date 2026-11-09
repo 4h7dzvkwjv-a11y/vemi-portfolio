@@ -1,0 +1,11 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="390" height="650" viewBox="0 0 390 650" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Fine Background Arcs" clip-path="url(#clip0_0_38)">
+<path id="Vector" d="M410 294C525.98 294 620 199.98 620 84C620 -31.9798 525.98 -126 410 -126C294.02 -126 200 -31.9798 200 84C200 199.98 294.02 294 410 294Z" stroke="#9DB989" stroke-opacity="0.22"/>
+<path id="Vector_2" d="M-60 740C28.3656 740 100 668.366 100 580C100 491.634 28.3656 420 -60 420C-148.366 420 -220 491.634 -220 580C-220 668.366 -148.366 740 -60 740Z" stroke="#C9D8BF" stroke-opacity="0.26"/>
+</g>
+<defs>
+<clipPath id="clip0_0_38">
+<rect width="390" height="650" fill="white"/>
+</clipPath>
+</defs>
+</svg>

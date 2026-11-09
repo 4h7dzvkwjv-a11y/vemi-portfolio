@@ -1,0 +1,75 @@
+{
+  "artifact_kind": "VEMI_AMV2_GATE_0C_CANONICAL_MAPPING",
+  "artifact_version": "1.4",
+  "contract": {
+    "name": "VEMI — AMV2 Technical Contract — Final V1.4",
+    "sha256": "600b717178405989f34e9f27581e625b62897190ddcd66cfa890201bde69e8fb"
+  },
+  "mapping": {
+    "path": "data/amv2/gate-0c/exercise-metric-map.v1.4.json",
+    "bytes": 28948,
+    "sha256": "94dc6c256d407f89deb121aca18215e52ddb045288e50ebcd7f86464886917fa",
+    "rows": 114,
+    "unique_exercise_keys": 114,
+    "default_source": "GENERIC_FALLBACK",
+    "distribution": {
+      "repetitions_weight": 75,
+      "repetitions_only": 29,
+      "time_per_set": 7,
+      "total_duration": 3
+    }
+  },
+  "serialization": {
+    "top_level": "array",
+    "row_order": "exercise_key ordinal ascending",
+    "field_order": [
+      "exercise_key",
+      "metric_type",
+      "default_source",
+      "default_sets",
+      "default_repetitions",
+      "default_weight_kg",
+      "default_time_per_set_seconds",
+      "default_total_duration_seconds"
+    ],
+    "json": "compact",
+    "encoding": "UTF-8",
+    "bom": false,
+    "final_lf": true
+  },
+  "zero_initialization": {
+    "repetitions_weight": "3 sets / 0 repetitions / 0 kg",
+    "repetitions_only": "3 sets / 0 repetitions",
+    "time_per_set": "3 sets / 0 seconds",
+    "total_duration": "0 seconds / no artificial sets"
+  },
+  "source_evidence": [
+    {
+      "path": "data/plan-engine/v2/exercise-rules.json",
+      "bytes": 173875,
+      "sha256": "1acebc67a761c52a6f78e419cf1bbed30d238c43fd043238253633f4a2381865"
+    },
+    {
+      "path": "data/plan-engine/v2/VEMI_Manifest_Content_Complete_2026-08-08.json",
+      "bytes": 464117,
+      "sha256": "1abb69e8422ec90e2744a3235fda25f7c10d50f32874a08cf0cca9dbaf44bee9"
+    },
+    {
+      "path": "lib/plan-engine/v2-runtime.mjs",
+      "bytes": 99002,
+      "sha256": "0872f17563e547b0d202d6e0c0ed1ad3cfd4b3db215e5466570660ee479f078a"
+    },
+    {
+      "path": "tests/helpers/plan-engine-v2-fixture.mjs",
+      "bytes": 1975,
+      "sha256": "e8428b7ee314463f6516364bab62b424331d3c6d3d7c20fe2a8d078e3a5f91dc"
+    }
+  ],
+  "recuration": {
+    "status": "COMPLETE_114_OF_114_ZERO_AMBIGUITIES",
+    "high_confidence_rows": 108,
+    "medium_confidence_rows": 6,
+    "ambiguous_rows": 0
+  },
+  "gate_0c_artifact_status": "CLOSED"
+}

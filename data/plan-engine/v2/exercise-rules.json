@@ -1,0 +1,5697 @@
+{
+  "schema_version": "vemi-plan-engine-rules-v2.0",
+  "source_manifest": {
+    "filename": "VEMI_Manifest_Content_Complete_2026-08-08.json",
+    "sha256": "90dbf41cb202089cc8e39f80c49b115cd8ca93904282802e841b64e21302f8de",
+    "point_2_schema_version": "vemi-point-2-1.0"
+  },
+  "exercise_count": 114,
+  "rules": [
+    {
+      "exercise_key": "ab-wheel-din-genunchi",
+      "canonical_name": "Ab Wheel din genunchi",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "stabilitate avansată și anti-extensie"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "dead-bug",
+        "plank",
+        "plank-cu-greutate",
+        "plank-invers"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu dubla automat două variante de plank doar pentru a crește numărul de exerciții."
+      ],
+      "notes": [],
+      "source": {
+        "type": "recovered_partial_plus_controlled_completion",
+        "reference": "VEMI_Personal_Context_Evidence_2026-08-08.jsonl"
+      }
+    },
+    {
+      "exercise_key": "abdomene",
+      "canonical_name": "Crunch abdominal",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "flexie abdominală pentru partea anterioară a trunchiului"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "crunch-cu-gantera",
+        "crunch-cu-minge",
+        "ridicari-de-trunchi-cu-disc"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege de regulă o singură variantă de flexie abdominală cu același rol în sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 4/5, frecvență 4 zile. Femei: prioritate 5/5, frecvență 4 zile. 60+: preferat. Rol: abdomen superior.",
+          "source": "Romanian Home Workout Exercise Guide.png"
+        }
+      }
+    },
+    {
+      "exercise_key": "alergare-pe-loc",
+      "canonical_name": "Alergare pe loc",
+      "canonical_group": "Cardio",
+      "kind": "cardio",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 2,
+        "female": 2
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "cardio dinamic cu greutatea corpului"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "burpees",
+        "mountain-climbers",
+        "ridicari-alternative-ale-genunchilor"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu aglomera aceeași sesiune cu mai multe variante cardio dinamice dacă au același rol."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "aplecari-laterale-din-picioare",
+      "canonical_name": "Aplecări laterale din picioare",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "rotație sau flexie laterală controlată pentru oblici"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "crunch-lateral-din-picioare",
+        "ridicari-de-genunchi-cu-rotatie",
+        "russian-twist",
+        "russian-twist-cu-disc"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe variante de rotație cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "atingeri-alternative-ale-piciorului-din-picioare",
+      "canonical_name": "Atingeri alternative ale piciorului din picioare",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "rotație sau flexie laterală controlată pentru oblici"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "aplecari-laterale-din-picioare",
+        "crunch-lateral-din-picioare",
+        "ridicari-de-genunchi-cu-rotatie",
+        "russian-twist",
+        "russian-twist-cu-disc"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe variante de rotație cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "bicicleta-eliptica",
+      "canonical_name": "Bicicletă eliptică",
+      "canonical_group": "Cardio",
+      "kind": "cardio",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 2,
+        "female": 2
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "cardio cu impact redus și ritm controlabil"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "bicicleta-stationara",
+        "mers-rapid-pe-banda"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Selectează o singură variantă principală de aparat cardio în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "bicicleta-stationara",
+      "canonical_name": "Bicicletă staționară",
+      "canonical_group": "Cardio",
+      "kind": "cardio",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 2,
+        "female": 2
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "cardio cu impact redus și ritm controlabil"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "bicicleta-eliptica",
+        "mers-rapid-pe-banda"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Selectează o singură variantă principală de aparat cardio în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "burpees",
+      "canonical_name": "Burpees",
+      "canonical_group": "Cardio",
+      "kind": "cardio",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 2,
+        "female": 2
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "cardio total-body, forță și explozie"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "alergare-pe-loc",
+        "mountain-climbers",
+        "ridicari-alternative-ale-genunchilor"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu aglomera aceeași sesiune cu mai multe variante cardio dinamice dacă au același rol."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 5/5, frecvență 2–3 zile. Femei: prioritate 5/5, frecvență 2–3 zile. 60+: nu se selectează implicit. Rol: cardio total body, forță și explozie.",
+          "source": "Romanian Home Workout Exercise Guide.png"
+        }
+      }
+    },
+    {
+      "exercise_key": "cobra-din-culcat",
+      "canonical_name": "Cobra din culcat",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 2,
+      "female_priority": 2,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "extensie și control al lanțului posterior al trunchiului"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "hiperextensii-lombare-la-banca",
+        "superman-alternativ"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Evită acumularea automată a mai multor exerciții cu solicitare similară pentru extensia trunchiului."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "crunch-cu-gantera",
+      "canonical_name": "Crunch cu ganteră",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "flexie abdominală cu rezistență"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "abdomene",
+        "crunch-cu-minge",
+        "ridicari-de-trunchi-cu-disc"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege de regulă o singură variantă de flexie abdominală cu același rol în sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 3/5, frecvență 5 zile. Femei: prioritate 3/5, frecvență 6 zile. 60+: nu este alegerea implicită; se preferă Crunch abdominal fără greutate. Rol: flexie abdominală cu rezistență. Alternative: Crunch cu minge, Crunch abdominal, Ridicări de trunchi cu disc.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "crunch-cu-minge",
+      "canonical_name": "Crunch cu minge",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "flexie controlată a trunchiului pentru abdomen"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "abdomene",
+        "crunch-cu-gantera",
+        "ridicari-de-trunchi-cu-disc"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege de regulă o singură variantă de flexie abdominală cu același rol în sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "crunch-lateral-din-picioare",
+      "canonical_name": "Crunch lateral din picioare",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "rotație sau flexie laterală controlată pentru oblici"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "aplecari-laterale-din-picioare",
+        "ridicari-de-genunchi-cu-rotatie",
+        "russian-twist",
+        "russian-twist-cu-disc"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe variante de rotație cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "dead-bug",
+      "canonical_name": "Dead Bug",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "stabilitate și control al trunchiului"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ab-wheel-din-genunchi",
+        "plank",
+        "plank-cu-greutate",
+        "plank-invers"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu dubla automat două variante de plank doar pentru a crește numărul de exerciții."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 4/5, frecvență 4 zile. Femei: prioritate 5/5, frecvență 4 zile. 60+: prioritate maximă / preferat. Rol: stabilitate și control al trunchiului; potrivit pentru începători și planuri simple, controlabile.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "dips-intre-scaune",
+      "canonical_name": "Dips între scaune",
+      "canonical_group": "Triceps",
+      "kind": "forta",
+      "places": [
+        "acasa"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 3,
+        "female": 3
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "extensie a cotului pentru triceps, cu participarea pieptului și umerilor anteriori"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "extensii-pentru-triceps-la-cablu-cu-bara",
+        "extensii-pentru-triceps-la-cablu-cu-franghia",
+        "flotari-diamant",
+        "triceps-deasupra-capului"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe extensii cu același rol în aceeași sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 4/5, frecvență 3–4 zile. Femei: prioritate 4/5, frecvență 3–4 zile. 60+: acceptat cu adaptări. Rol: triceps, piept și umeri anteriori.",
+          "source": "Romanian Home Workout Exercise Guide.png"
+        }
+      }
+    },
+    {
+      "exercise_key": "dips-paralele",
+      "canonical_name": "Flotări la paralele",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "împingere compusă la paralele pentru piept"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flotari",
+        "impins-cu-bara-pe-banca-declinata",
+        "impins-gantere"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu este necesară alături de mai multe alte împingeri compuse în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "extensii-cvadriceps",
+      "canonical_name": "Extensii pentru picioare la aparat",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "izolare pentru cvadriceps"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "genuflexiuni",
+        "genuflexiuni-la-bara-smith",
+        "presa-pentru-picioare-la-aparat-din-sezut"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 4/5, frecvență minimă 5 zile. Femei: prioritate 5/5, frecvență 4 zile. 60+: preferat dacă mișcarea este confortabilă. Rol: izolare pentru cvadriceps.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "extensii-pentru-femurali-din-culcat",
+      "canonical_name": "Extensii pentru femurali din culcat",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "flexie controlată a genunchiului pentru femurali"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flexii-pentru-picioare-la-aparat",
+        "indreptari-romanesti"
+      ],
+      "exclusion_keys": [
+        "indreptari-romanesti"
+      ],
+      "exclusions": [
+        "Nu se combină obligatoriu cu Îndreptări românești cu gantere."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "extensii-pentru-triceps-cu-bara-ez-din-culcat",
+      "canonical_name": "Extensii pentru triceps cu bara EZ din culcat",
+      "canonical_group": "Triceps",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 2,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "extensie cu greutate liberă pentru triceps, mai tehnică decât variantele la cablu"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "dips-intre-scaune",
+        "extensii-pentru-triceps-la-cablu-cu-bara",
+        "extensii-pentru-triceps-la-cablu-cu-franghia",
+        "flotari-diamant",
+        "triceps-deasupra-capului"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe extensii cu același rol în aceeași sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 4/5, frecvență minimă 6 zile. Femei: prioritate 2/5, frecvență 7 zile. 60+: nu se selectează implicit. Rol: exercițiu cu greutate liberă pentru triceps, mai tehnic decât variantele la cablu. Alternativă: Extensii pentru triceps deasupra capului la cablu.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "extensii-pentru-triceps-la-cablu-cu-bara",
+      "canonical_name": "Extensii pentru triceps la cablu cu bară",
+      "canonical_group": "Triceps",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "extensie bilaterală de bază pentru triceps"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "dips-intre-scaune",
+        "extensii-pentru-triceps-la-cablu-cu-franghia",
+        "flotari-diamant",
+        "triceps-deasupra-capului"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe extensii cu același rol în aceeași sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 5/5, frecvență minimă 4 zile, rol exercițiu bilateral de bază. Femei: prioritate 4/5, frecvență minimă 5 zile. 60+: preferat dacă poziția mâinilor este confortabilă. Alternative: extensii cu frânghia și variantele unilaterale.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "extensii-pentru-triceps-la-cablu-cu-franghia",
+      "canonical_name": "Extensii pentru triceps la cablu cu frânghia",
+      "canonical_group": "Triceps",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "extensie a cotului cu accent pe triceps"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "dips-intre-scaune",
+        "extensii-pentru-triceps-la-cablu-cu-bara",
+        "flotari-diamant",
+        "triceps-deasupra-capului"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe extensii cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "extensii-pentru-triceps-la-cablu-cu-priza-inversa",
+      "canonical_name": "Extensii pentru triceps la cablu cu priză inversă",
+      "canonical_group": "Triceps",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 2,
+      "female_priority": 1,
+      "min_rotation_days": {
+        "male": 7,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "variantă secundară de pushdown pentru diversificare"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "dips-intre-scaune",
+        "extensii-pentru-triceps-la-cablu-cu-bara",
+        "extensii-pentru-triceps-la-cablu-cu-franghia",
+        "flotari-diamant",
+        "triceps-deasupra-capului"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe extensii cu același rol în aceeași sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 2/5, frecvență minimă 7 zile. Femei: prioritate 1/5, frecvență minimă 7 zile. 60+: nu este alegere implicită, deoarece priza poate fi mai puțin confortabilă. Rol: variantă secundară de pushdown pentru diversificare. Alternative: extensii cu bara în priză normală și extensii cu frânghia.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "extensii-unilaterale-pentru-triceps-la-cablu",
+      "canonical_name": "Extensii unilaterale pentru triceps la cablu",
+      "canonical_group": "Triceps",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "extensie a cotului cu accent pe triceps"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "dips-intre-scaune",
+        "extensii-pentru-triceps-la-cablu-cu-bara",
+        "extensii-pentru-triceps-la-cablu-cu-franghia",
+        "flotari-diamant",
+        "triceps-deasupra-capului"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe extensii cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "extensii-unilaterale-pentru-triceps-la-cablu-cu-sprijin",
+      "canonical_name": "Extensii unilaterale pentru triceps la cablu cu sprijin",
+      "canonical_group": "Triceps",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "extensie a cotului cu accent pe triceps"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "dips-intre-scaune",
+        "extensii-pentru-triceps-la-cablu-cu-bara",
+        "extensii-pentru-triceps-la-cablu-cu-franghia",
+        "flotari-diamant",
+        "triceps-deasupra-capului"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe extensii cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "face-pull",
+      "canonical_name": "Face Pull la cablu",
+      "canonical_group": "Umeri",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "deltoid posterior și partea superioară a spatelui"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "fluturari-inverse",
+        "ridicari-laterale-la-cablu-din-aplecat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu dubla automat mai multe variante pentru deltoidul posterior cu același rol."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 4/5, frecvență minimă 5 zile. Femei: prioritate 3/5, frecvență 6 zile. 60+: acceptat selectiv, cu greutate ușor de controlat. Rol: deltoid posterior și partea superioară a spatelui. Alternative: Reverse Fly la aparat; Ridicări laterale la cablu din aplecat. Locație: la sală.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "fandari-bulgaresti",
+      "canonical_name": "Fandări bulgărești cu gantere",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "reduced_priority",
+        "guidance": "Prioritate redusă; se preferă o variantă mai stabilă sau mai ușor de scalat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "mișcare unilaterală pentru picioare"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "fandari-inverse-alternative",
+        "fandari-inverse-cu-gantere"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege o singură variantă principală de fandări în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "fandari-inverse-alternative",
+      "canonical_name": "Fandări inverse alternative",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "mișcare unilaterală pentru picioare"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "fandari-bulgaresti",
+        "fandari-inverse-cu-gantere"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege o singură variantă principală de fandări în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "fandari-inverse-cu-gantere",
+      "canonical_name": "Fandări inverse cu gantere",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "reduced_priority",
+        "guidance": "Prioritate redusă; se preferă o variantă mai stabilă sau mai ușor de scalat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "mișcare unilaterală pentru picioare"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "fandari-bulgaresti",
+        "fandari-inverse-alternative"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege o singură variantă principală de fandări în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "flexii-cu-bara-dreapta",
+      "canonical_name": "Flexii cu bara dreaptă",
+      "canonical_group": "Biceps",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "flexie a cotului pentru biceps"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flexii-gantere",
+        "flexii-la-cablu-cu-bara-ez",
+        "flexii-la-cablu-cu-franghia"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe variante de flexii cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "flexii-cu-gantere-pe-banca-inclinata",
+      "canonical_name": "Flexii cu gantere pe bancă înclinată",
+      "canonical_group": "Biceps",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "flexie a cotului pentru biceps"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flexii-cu-bara-dreapta",
+        "flexii-gantere",
+        "flexii-la-cablu-cu-bara-ez",
+        "flexii-la-cablu-cu-franghia"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe variante de flexii cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "flexii-gantere",
+      "canonical_name": "Flexii cu gantere din picioare",
+      "canonical_group": "Biceps",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "flexie a cotului pentru biceps"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flexii-cu-bara-dreapta",
+        "flexii-la-cablu-cu-bara-ez",
+        "flexii-la-cablu-cu-franghia"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe variante de flexii cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "flexii-la-banca-scott-cu-bara-ez",
+      "canonical_name": "Flexii la banca Scott cu bara EZ",
+      "canonical_group": "Biceps",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "flexie a cotului pentru biceps"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flexii-cu-bara-dreapta",
+        "flexii-gantere",
+        "flexii-la-cablu-cu-bara-ez",
+        "flexii-la-cablu-cu-franghia"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe variante de flexii cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "flexii-la-cablu-cu-bara-ez",
+      "canonical_name": "Flexii la cablu cu bara EZ",
+      "canonical_group": "Biceps",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "una dintre principalele alegeri pentru biceps"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flexii-cu-bara-dreapta",
+        "flexii-gantere",
+        "flexii-la-cablu-cu-franghia"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe variante de flexii cu același rol în aceeași sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "recovered_partial_plus_controlled_completion",
+        "reference": "VEMI_Personal_Context_Evidence_2026-08-08.jsonl"
+      }
+    },
+    {
+      "exercise_key": "flexii-la-cablu-cu-bratele-in-spatele-corpului",
+      "canonical_name": "Flexii la cablu cu brațele în spatele corpului",
+      "canonical_group": "Biceps",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "flexie a cotului pentru biceps"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flexii-cu-bara-dreapta",
+        "flexii-gantere",
+        "flexii-la-cablu-cu-bara-ez",
+        "flexii-la-cablu-cu-franghia"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe variante de flexii cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "flexii-la-cablu-cu-franghia",
+      "canonical_name": "Flexii la cablu cu frânghia",
+      "canonical_group": "Biceps",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "flexie a cotului pentru biceps"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flexii-cu-bara-dreapta",
+        "flexii-gantere",
+        "flexii-la-cablu-cu-bara-ez"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe variante de flexii cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "flexii-pentru-picioare-la-aparat",
+      "canonical_name": "Flexii pentru picioare la aparat",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "izolare pentru femurali"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "extensii-pentru-femurali-din-culcat",
+        "indreptari-romanesti"
+      ],
+      "exclusion_keys": [
+        "indreptari-romanesti"
+      ],
+      "exclusions": [
+        "Nu se combină obligatoriu cu Îndreptări românești cu gantere."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 5/5. Femei: prioritate 5/5. 60+: acceptat selectiv. Rol: femurali. Condiție: nu se combină obligatoriu cu Îndreptări românești.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "flotari",
+      "canonical_name": "Flotări",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "împingere cu greutatea corpului pentru piept"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flotari-cu-atingerea-umarului",
+        "flotari-declinate",
+        "flotari-hindu",
+        "flotari-largi"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Într-o sesiune normală nu sunt necesare toate variantele de flotări."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "flotari-cu-atingerea-umarului",
+      "canonical_name": "Flotări cu atingerea umărului",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "împingere cu greutatea corpului pentru piept"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flotari",
+        "flotari-declinate",
+        "flotari-hindu",
+        "flotari-largi"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Într-o sesiune normală nu sunt necesare toate variantele de flotări."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "flotari-declinate",
+      "canonical_name": "Flotări cu picioarele ridicate",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "acasa"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "împingere cu greutatea corpului pentru piept"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flotari",
+        "flotari-cu-atingerea-umarului",
+        "flotari-hindu",
+        "flotari-largi"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Într-o sesiune normală nu sunt necesare toate variantele de flotări."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "flotari-diamant",
+      "canonical_name": "Flotări cu mâinile apropiate",
+      "canonical_group": "Triceps",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 0,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "împingere pentru piept și triceps, cu accent mai mare pe triceps"
+      },
+      "level": {
+        "eligible": [
+          "avansat"
+        ],
+        "preferred": [
+          "avansat"
+        ]
+      },
+      "alternatives": [
+        "flotari-declinate",
+        "flotari-largi"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Într-o sesiune normală nu se folosesc toate cele trei variante de flotări."
+      ],
+      "notes": [
+        "Eligibilitatea nominală cea mai nouă este masculin, cat2–cat3, nivel avansat, Acasă + La sală, cu frecvență medie."
+      ],
+      "source": {
+        "type": "recovered_partial_plus_controlled_completion",
+        "reference": "VEMI_Personal_Context_Evidence_2026-08-08.jsonl"
+      }
+    },
+    {
+      "exercise_key": "flotari-hindu",
+      "canonical_name": "Flotări Hindu",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "împingere cu greutatea corpului pentru piept"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flotari",
+        "flotari-cu-atingerea-umarului",
+        "flotari-declinate",
+        "flotari-largi"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Într-o sesiune normală nu sunt necesare toate variantele de flotări."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "flotari-largi",
+      "canonical_name": "Flotări cu mâinile depărtate",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "acasa"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "împingere cu greutatea corpului pentru piept"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "flotari",
+        "flotari-cu-atingerea-umarului",
+        "flotari-declinate",
+        "flotari-hindu"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Într-o sesiune normală nu sunt necesare toate variantele de flotări."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "fluturari-ascendente-la-cablu",
+      "canonical_name": "Fluturări ascendente la cablu",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "adducție controlată a brațelor pentru izolarea pieptului"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "fluturari-descendente-la-cablu",
+        "fluturari-gantere",
+        "fluturari-la-aparat",
+        "pec-deck"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege de regulă o singură variantă de fluturări în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "fluturari-descendente-la-cablu",
+      "canonical_name": "Fluturări descendente la cablu",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "adducție controlată a brațelor pentru izolarea pieptului"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "fluturari-ascendente-la-cablu",
+        "fluturari-gantere",
+        "fluturari-la-aparat",
+        "pec-deck"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege de regulă o singură variantă de fluturări în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "fluturari-gantere",
+      "canonical_name": "Fluturări cu gantere",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "adducție controlată a brațelor pentru izolarea pieptului"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "fluturari-ascendente-la-cablu",
+        "fluturari-descendente-la-cablu",
+        "fluturari-la-aparat",
+        "pec-deck"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege de regulă o singură variantă de fluturări în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "fluturari-inverse",
+      "canonical_name": "Reverse Fly la aparat",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "partea superioară a spatelui și deltoid posterior"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "face-pull",
+        "ridicari-laterale-la-cablu-din-aplecat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu dubla automat mai multe variante pentru deltoidul posterior cu același rol."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 3/5, frecvență minimă 5 zile, rol secundar pentru partea superioară a spatelui și deltoidul posterior. Femei: prioritate 3/5, frecvență 6 zile, variantă stabilă potrivită planurilor gratuite. 60+: acceptat în rotație restrânsă dacă este executat confortabil. Fără excluderi majore. Locație: la sală.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "fluturari-la-aparat",
+      "canonical_name": "Fluturări la aparat",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "adducție controlată a brațelor pentru izolarea pieptului"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "fluturari-ascendente-la-cablu",
+        "fluturari-descendente-la-cablu",
+        "fluturari-gantere",
+        "pec-deck"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege de regulă o singură variantă de fluturări în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "fluturari-la-cablu-pe-banca-declinata",
+      "canonical_name": "Fluturări la cablu pe bancă declinată",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 2,
+      "female_priority": 2,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "adducție controlată a brațelor pentru izolarea pieptului"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "fluturari-ascendente-la-cablu",
+        "fluturari-descendente-la-cablu",
+        "fluturari-gantere",
+        "fluturari-la-aparat",
+        "pec-deck"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege de regulă o singură variantă de fluturări în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "genuflexiuni",
+      "canonical_name": "Genuflexiuni cu greutatea corpului",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "exercițiu de bază pentru coapse și fesieri"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "genuflexiuni-goblet",
+        "genuflexiuni-la-aparat-v-squat",
+        "genuflexiuni-la-bara-smith",
+        "genuflexiuni-la-hack-squat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Selectează de regulă o singură variantă principală de genuflexiune în aceeași sesiune."
+      ],
+      "notes": [
+        "Prioritatea pentru bărbați crește la 5/5 în planurile Acasă și pentru începători."
+      ],
+      "source": {
+        "type": "recovered_partial_plus_controlled_completion",
+        "reference": "VEMI_Personal_Context_Evidence_2026-08-08.jsonl"
+      }
+    },
+    {
+      "exercise_key": "genuflexiuni-cu-gantere-la-umeri",
+      "canonical_name": "Genuflexiuni cu gantere la umeri",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "reduced_priority",
+        "guidance": "Prioritate redusă; se preferă o variantă mai stabilă sau mai ușor de scalat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "genuflexiune pentru coapse și fesieri"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "genuflexiuni",
+        "genuflexiuni-goblet",
+        "genuflexiuni-la-aparat-v-squat",
+        "genuflexiuni-la-bara-smith",
+        "genuflexiuni-la-hack-squat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Selectează de regulă o singură variantă principală de genuflexiune în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "genuflexiuni-goblet",
+      "canonical_name": "Genuflexiuni cu gantera la piept",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "genuflexiune pentru coapse și fesieri"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "genuflexiuni",
+        "genuflexiuni-la-aparat-v-squat",
+        "genuflexiuni-la-bara-smith",
+        "genuflexiuni-la-hack-squat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Selectează de regulă o singură variantă principală de genuflexiune în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "genuflexiuni-haltera",
+      "canonical_name": "Genuflexiuni cu bara",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "genuflexiune pentru coapse și fesieri"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "genuflexiuni",
+        "genuflexiuni-goblet",
+        "genuflexiuni-la-aparat-v-squat",
+        "genuflexiuni-la-bara-smith",
+        "genuflexiuni-la-hack-squat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Selectează de regulă o singură variantă principală de genuflexiune în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "genuflexiuni-la-aparat-v-squat",
+      "canonical_name": "Genuflexiuni la aparat V-Squat",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "genuflexiune pentru coapse și fesieri"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "genuflexiuni",
+        "genuflexiuni-goblet",
+        "genuflexiuni-la-bara-smith",
+        "genuflexiuni-la-hack-squat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Selectează de regulă o singură variantă principală de genuflexiune în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "genuflexiuni-la-bara-smith",
+      "canonical_name": "Genuflexiuni la bara Smith",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "genuflexiune pentru coapse și fesieri"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "genuflexiuni",
+        "genuflexiuni-goblet",
+        "genuflexiuni-la-aparat-v-squat",
+        "genuflexiuni-la-hack-squat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Selectează de regulă o singură variantă principală de genuflexiune în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "genuflexiuni-la-cablu",
+      "canonical_name": "Genuflexiuni la cablu",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "variantă de genuflexiune la cablu"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "genuflexiuni",
+        "genuflexiuni-goblet",
+        "genuflexiuni-la-aparat-v-squat",
+        "genuflexiuni-la-bara-smith",
+        "genuflexiuni-la-hack-squat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Selectează de regulă o singură variantă principală de genuflexiune în aceeași sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 3/5, frecvență 6 zile. Femei: prioritate 4/5, frecvență 5 zile. 60+: nu se selectează implicit. Rol: variantă de genuflexiune la cablu. Locație: la sală.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "genuflexiuni-la-hack-squat",
+      "canonical_name": "Genuflexiuni la Hack Squat",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "genuflexiune pentru coapse și fesieri"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "genuflexiuni",
+        "genuflexiuni-goblet",
+        "genuflexiuni-la-aparat-v-squat",
+        "genuflexiuni-la-bara-smith"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Selectează de regulă o singură variantă principală de genuflexiune în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "genuflexiuni-sumo",
+      "canonical_name": "Genuflexiuni sumo cu ganteră",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "genuflexiune pentru coapse, fesieri și adductori"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "genuflexiuni",
+        "genuflexiuni-goblet",
+        "genuflexiuni-la-aparat-v-squat",
+        "genuflexiuni-la-bara-smith",
+        "genuflexiuni-la-hack-squat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Selectează de regulă o singură variantă principală de genuflexiune în aceeași sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "recovered_partial_plus_controlled_completion",
+        "reference": "VEMI_Personal_Context_Evidence_2026-08-08.jsonl"
+      }
+    },
+    {
+      "exercise_key": "hip-thrust-cu-gantera",
+      "canonical_name": "Hip Thrust cu gantera",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "reduced_priority",
+        "guidance": "Prioritate redusă; se preferă o variantă mai stabilă sau mai ușor de scalat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "extensie a șoldului cu accent pe fesieri"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "fandari-inverse-cu-gantere",
+        "genuflexiuni-sumo",
+        "indreptari-romanesti"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "hiperextensii-lombare-la-banca",
+      "canonical_name": "Hiperextensii lombare la bancă",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 2,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "reduced_priority",
+        "guidance": "Prioritate redusă; se preferă o variantă mai stabilă sau mai ușor de scalat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "lanț posterior și musculatura lombară"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "cobra-din-culcat",
+        "superman-alternativ"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Evită acumularea automată a mai multor exerciții cu solicitare similară pentru extensia trunchiului."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 3/5, frecvență 6 zile, rol secundar pentru lanțul posterior și musculatura lombară. Femei: prioritate 2/5, frecvență 7 zile, utilizare ocazională. 60+: acceptat cu prioritate redusă, greutate corporală sau rezistență foarte mică și amplitudine controlată. Excluderi: evită Îndreptări românești în aceeași sesiune și acumularea mai multor exerciții solicitante pentru lombari.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "impins-banca-haltera",
+      "canonical_name": "Împins cu bara",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "reduced_priority",
+        "guidance": "Prioritate redusă; se preferă o variantă mai stabilă sau mai ușor de scalat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "împingere orizontală pentru piept"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "impins-cu-bara-smith",
+        "impins-gantere",
+        "impins-la-aparat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Dacă există un singur slot de împingere orizontală, alege o singură variantă principală."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "impins-cu-bara-pe-banca-declinata",
+      "canonical_name": "Împins cu bara pe bancă declinată",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "reduced_priority",
+        "guidance": "Prioritate redusă; se preferă o variantă mai stabilă sau mai ușor de scalat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "împingere pentru piept la un unghi specific"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "impins-cu-bara-pe-banca-inclinata",
+        "impins-gantere",
+        "impins-inclinat-gantere"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu dubla automat două împinsuri cu același unghi în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "impins-cu-bara-pe-banca-inclinata",
+      "canonical_name": "Împins cu bara pe bancă înclinată",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "reduced_priority",
+        "guidance": "Prioritate redusă; se preferă o variantă mai stabilă sau mai ușor de scalat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "împingere pentru piept la un unghi specific"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "impins-cu-bara-pe-banca-declinata",
+        "impins-gantere",
+        "impins-inclinat-gantere"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu dubla automat două împinsuri cu același unghi în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "impins-cu-bara-smith",
+      "canonical_name": "Împins cu bara Smith",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "reduced_priority",
+        "guidance": "Prioritate redusă; se preferă o variantă mai stabilă sau mai ușor de scalat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "împingere orizontală pentru piept"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "impins-banca-haltera",
+        "impins-gantere",
+        "impins-la-aparat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Dacă există un singur slot de împingere orizontală, alege o singură variantă principală."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "impins-cu-bara-smith-cu-priza-ingusta",
+      "canonical_name": "Împins cu bara Smith cu priză îngustă",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 2,
+      "female_priority": 0,
+      "min_rotation_days": {
+        "male": 7,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "exercițiu secundar pentru piept, cu implicare importantă a tricepsului"
+      },
+      "level": {
+        "eligible": [
+          "avansat"
+        ],
+        "preferred": [
+          "avansat"
+        ]
+      },
+      "alternatives": [
+        "flotari-diamant",
+        "impins-cu-gantere-apropiate"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu se tratează ca exercițiu principal implicit pentru piept."
+      ],
+      "notes": [
+        "Eligibilitatea aprobată este masculin, cat2–cat3, nivel avansat, la sală, cu prioritate și frecvență scăzute."
+      ],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă structurată aprobată recuperată în manifest",
+        "original_rule": {
+          "eligible_gender": [
+            "masculin"
+          ],
+          "eligible_age_groups": [
+            "cat2",
+            "cat3"
+          ],
+          "eligible_levels": [
+            "avansat"
+          ],
+          "eligible_places": [
+            "sala"
+          ],
+          "selection_priority": "scazuta",
+          "selection_frequency": "scazuta",
+          "role": "exercițiu secundar pentru piept, cu implicare importantă a tricepsului",
+          "exclusions": [
+            "nu se tratează ca exercițiu principal implicit pentru piept"
+          ]
+        }
+      }
+    },
+    {
+      "exercise_key": "impins-cu-gantere-apropiate",
+      "canonical_name": "Împins cu gantere apropiate",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "reduced_priority",
+        "guidance": "Prioritate redusă; se preferă o variantă mai stabilă sau mai ușor de scalat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "împingere orizontală pentru piept"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "impins-banca-haltera",
+        "impins-cu-bara-smith",
+        "impins-gantere",
+        "impins-la-aparat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Dacă există un singur slot de împingere orizontală, alege o singură variantă principală."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "impins-cu-gantere-pentru-umeri-din-picioare",
+      "canonical_name": "Împins cu gantere pentru umeri din picioare",
+      "canonical_group": "Umeri",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 2,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "exercițiu principal de împins pentru umeri"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "impins-cu-gantere-pentru-umeri-din-sezut",
+        "impins-la-aparat-pentru-umeri"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege de regulă o singură variantă principală de împins pentru umeri."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 4/5, frecvență 6 zile. Femei: prioritate 2/5, frecvență 7 zile. 60+: nu este alegere implicită. Rol: exercițiu principal de împins pentru umeri. Alternative: Împins cu gantere din șezut; Împins la aparat pentru umeri.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "impins-cu-gantere-pentru-umeri-din-sezut",
+      "canonical_name": "Împins cu gantere pentru umeri din șezut",
+      "canonical_group": "Umeri",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "împingere verticală pentru umeri"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "impins-cu-gantere-pentru-umeri-din-picioare",
+        "impins-la-aparat-pentru-umeri"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege de regulă o singură variantă principală de împins pentru umeri."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "impins-gantere",
+      "canonical_name": "Împins cu gantere",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "împingere orizontală pentru piept"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "impins-banca-haltera",
+        "impins-cu-bara-smith",
+        "impins-la-aparat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Dacă există un singur slot de împingere orizontală, alege o singură variantă principală."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "impins-inclinat-gantere",
+      "canonical_name": "Împins cu gantere pe bancă înclinată",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "împingere pentru piept la un unghi specific"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "impins-cu-bara-pe-banca-declinata",
+        "impins-cu-bara-pe-banca-inclinata",
+        "impins-gantere"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu dubla automat două împinsuri cu același unghi în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "impins-la-aparat",
+      "canonical_name": "Împins la aparat",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "împingere orizontală pentru piept"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "impins-banca-haltera",
+        "impins-cu-bara-smith",
+        "impins-gantere"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Dacă există un singur slot de împingere orizontală, alege o singură variantă principală."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "impins-la-aparat-pentru-umeri",
+      "canonical_name": "Împins la aparat pentru umeri",
+      "canonical_group": "Umeri",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "împingere verticală pentru umeri"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "impins-cu-gantere-pentru-umeri-din-picioare",
+        "impins-cu-gantere-pentru-umeri-din-sezut"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege de regulă o singură variantă principală de împins pentru umeri."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "indreptari-pe-un-picior-fara-greutate",
+      "canonical_name": "Îndreptări pe un picior fără greutate",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "reduced_priority",
+        "guidance": "Prioritate redusă; se preferă o variantă mai stabilă sau mai ușor de scalat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "extensie a șoldului pentru lanțul posterior"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "hip-thrust-cu-gantera",
+        "indreptari-romanesti"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu acumula automat mai multe variante solicitante pentru lanțul posterior în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "indreptari-romanesti",
+      "canonical_name": "Îndreptări românești cu gantere",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "extensie a șoldului pentru lanțul posterior"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "hip-thrust-cu-gantera",
+        "indreptari-pe-un-picior-fara-greutate"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu acumula automat mai multe variante solicitante pentru lanțul posterior în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "mers-rapid-pe-banda",
+      "canonical_name": "Mers rapid pe bandă",
+      "canonical_group": "Cardio",
+      "kind": "cardio",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 2,
+        "female": 2
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "cardio cu impact redus și ritm controlabil"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "bicicleta-eliptica",
+        "bicicleta-stationara"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Selectează o singură variantă principală de aparat cardio în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "mountain-climbers",
+      "canonical_name": "Mountain Climbers",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 3,
+        "female": 3
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "cardio dinamic cu implicarea abdomenului și coapselor"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "alergare-pe-loc",
+        "burpees",
+        "ridicari-alternative-ale-genunchilor"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu aglomera aceeași sesiune cu mai multe variante cardio dinamice dacă au același rol."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 5/5, frecvență 3–4 zile. Femei: prioritate 5/5, frecvență 3–4 zile. 60+: nu se selectează implicit. Rol: cardio, abdomen și coapse.",
+          "source": "Romanian Home Workout Exercise Guide.png"
+        }
+      }
+    },
+    {
+      "exercise_key": "pec-deck",
+      "canonical_name": "Pec deck",
+      "canonical_group": "Piept",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "adducție controlată a brațelor pentru izolarea pieptului"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "fluturari-ascendente-la-cablu",
+        "fluturari-descendente-la-cablu",
+        "fluturari-gantere",
+        "fluturari-la-aparat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege de regulă o singură variantă de fluturări în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "plank",
+      "canonical_name": "Plank",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "exercițiu fundamental de stabilitate"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ab-wheel-din-genunchi",
+        "dead-bug",
+        "plank-cu-greutate",
+        "plank-invers"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu dubla automat două variante de plank doar pentru a crește numărul de exerciții."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 5/5, frecvență 4 zile. Femei: prioritate 5/5, frecvență 4 zile. 60+: preferat când poziția la sol este confortabilă. Rol: exercițiu fundamental de stabilitate.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "plank-cu-greutate",
+      "canonical_name": "Plank cu greutate",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 2,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "stabilitate și anti-extensie cu rezistență"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ab-wheel-din-genunchi",
+        "dead-bug",
+        "plank",
+        "plank-invers"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu dubla automat două variante de plank doar pentru a crește numărul de exerciții."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 3/5, frecvență 6 zile. Femei: prioritate 2/5, frecvență 7 zile. 60+: nu se selectează implicit; se preferă Plank fără greutate sau Dead Bug. Rol: stabilitate și anti-extensie cu rezistență. Alternative: Plank; Ab Wheel. Condiție: nu se combină cu Plank simplu doar pentru a crește numărul de exerciții.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "plank-invers",
+      "canonical_name": "Plank invers",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "stabilitate a trunchiului și control anti-extensie"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ab-wheel-din-genunchi",
+        "dead-bug",
+        "plank",
+        "plank-cu-greutate"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu dubla automat două variante de plank doar pentru a crește numărul de exerciții."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "presa-pentru-picioare-la-45",
+      "canonical_name": "Presă pentru picioare la 45°",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "împingere ghidată pentru picioare"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "genuflexiuni-la-bara-smith",
+        "presa-pentru-picioare-la-aparat-din-sezut"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat ambele prese pentru picioare în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "presa-pentru-picioare-la-aparat-din-sezut",
+      "canonical_name": "Presă pentru picioare la aparat din șezut",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "împingere ghidată pentru picioare"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "genuflexiuni-la-bara-smith",
+        "presa-pentru-picioare-la-45"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat ambele prese pentru picioare în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "pulldown-cu-bratele-drepte-la-cablu",
+      "canonical_name": "Pulldown cu brațele drepte la cablu",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "izolare a dorsalilor cu brațele aproape întinse"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "pullover-cablu"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat ambele variante în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "pullover-cablu",
+      "canonical_name": "Pullover la cablu din culcat",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 2,
+      "female_priority": 1,
+      "min_rotation_days": {
+        "male": 7,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "exercițiu auxiliar pentru dorsali"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "pulldown-cu-bratele-drepte-la-cablu"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat ambele variante în aceeași sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 2/5, frecvență 7 zile. Femei: prioritate 1/5, frecvență 7 zile. 60+: nu se selectează implicit. Rol: exercițiu auxiliar pentru dorsali. Alternativă: Pulldown cu brațele drepte la cablu.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "ramat-aparat",
+      "canonical_name": "Ramat la aparat cu sprijin pentru piept",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "exercițiu principal de tragere orizontală, stabil și reutilizabil"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ramat-haltera",
+        "ramat-la-cablu-cu-priza-ingusta",
+        "ramat-la-cablu-din-sezut",
+        "ramat-unilateral-la-cablu-din-sezut"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Dacă există un singur slot de tragere orizontală, alege o singură variantă principală."
+      ],
+      "notes": [],
+      "source": {
+        "type": "recovered_partial_plus_controlled_completion",
+        "reference": "VEMI_Personal_Context_Evidence_2026-08-08.jsonl"
+      }
+    },
+    {
+      "exercise_key": "ramat-haltera",
+      "canonical_name": "Ramat cu bara din aplecat",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 2,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "tragere orizontală importantă, mai ales pentru utilizatori cu experiență"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ramat-aparat",
+        "ramat-la-cablu-cu-priza-ingusta",
+        "ramat-la-cablu-din-sezut",
+        "ramat-unilateral-la-cablu-din-sezut"
+      ],
+      "exclusion_keys": [
+        "indreptari-romanesti",
+        "ramat-aparat",
+        "ramat-la-cablu-din-sezut"
+      ],
+      "exclusions": [
+        "Evită Îndreptări românești cu gantere în aceeași sesiune.",
+        "Dacă există un singur slot de tragere orizontală, nu îl combina cu Ramat la aparat cu sprijin pentru piept sau Ramat la cablu din șezut."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 4/5, frecvență 5 zile, rol tragere orizontală importantă, mai ales pentru utilizatorii cu experiență. Femei: prioritate 2/5, frecvență 7 zile, nu este alegere principală în planurile gratuite. 60+: exclus din selecția implicită. Excluderi: evită Îndreptări românești în aceeași sesiune; dacă există un singur loc de tragere orizontală, nu îl combina cu Ramat la aparat cu sprijin pentru piept sau Ramat la cablu din șezut.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "ramat-la-cablu-cu-priza-ingusta",
+      "canonical_name": "Ramat la cablu cu priză îngustă",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "tragere orizontală pentru spate"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ramat-aparat",
+        "ramat-haltera",
+        "ramat-la-cablu-din-sezut",
+        "ramat-unilateral-la-cablu-din-sezut"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Dacă există un singur slot de tragere orizontală, alege o singură variantă principală."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "ramat-la-cablu-din-sezut",
+      "canonical_name": "Ramat la cablu din șezut",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "preferred",
+        "guidance": "Variantă stabilă și ușor de scalat; poate intra în nucleul restrâns."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "exercițiu principal de tragere orizontală"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ramat-aparat",
+        "ramat-haltera",
+        "ramat-la-cablu-cu-priza-ingusta",
+        "ramat-unilateral-la-cablu-din-sezut"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Dacă există un singur slot de tragere orizontală, alege o singură variantă principală."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 5/5, frecvență minimă 4 zile, rol exercițiu principal de tragere orizontală. Femei: prioritate 4/5, frecvență minimă 5 zile, una dintre variantele principale pentru Spate. 60+: preferat, în nucleul restrâns. Alternative: Ramat unilateral la cablu din șezut; Ramat la aparat cu sprijin pentru piept când există un singur loc pentru tragere orizontală.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "ramat-unilateral-la-cablu-din-sezut",
+      "canonical_name": "Ramat unilateral la cablu din șezut",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "tragere orizontală pentru spate"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ramat-aparat",
+        "ramat-haltera",
+        "ramat-la-cablu-cu-priza-ingusta",
+        "ramat-la-cablu-din-sezut"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Dacă există un singur slot de tragere orizontală, alege o singură variantă principală."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "ridicari-alternative-ale-genunchilor",
+      "canonical_name": "Ridicări alternative ale genunchilor",
+      "canonical_group": "Cardio",
+      "kind": "cardio",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 2,
+        "female": 2
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "cardio dinamic cu greutatea corpului"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "alergare-pe-loc",
+        "burpees",
+        "mountain-climbers"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu aglomera aceeași sesiune cu mai multe variante cardio dinamice dacă au același rol."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "ridicari-de-genunchi-cu-rotatie",
+      "canonical_name": "Ridicări de genunchi cu rotație",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa"
+      ],
+      "male_priority": 3,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "abdomen, oblici și cardio ușor"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "aplecari-laterale-din-picioare",
+        "crunch-lateral-din-picioare",
+        "russian-twist",
+        "russian-twist-cu-disc"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe variante de rotație cu același rol în aceeași sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 3/5, frecvență 5 zile. Femei: prioritate 4/5, frecvență 5 zile. 60+: nu se selectează implicit în varianta rapidă. Rol: abdomen, oblici și cardio ușor. Alternativă: Crunch lateral din picioare.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "ridicari-de-genunchi-la-aparat",
+      "canonical_name": "Ridicări de genunchi la aparat",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "flexie dinamică a șoldului și trunchiului pentru abdomen"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-de-picioare-din-atarnat",
+        "v-up",
+        "v-up-cu-minge"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege o singură variantă avansată de ridicare în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "ridicari-de-picioare-din-atarnat",
+      "canonical_name": "Ridicări de picioare din atârnat",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "flexie dinamică a șoldului și trunchiului pentru abdomen"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-de-genunchi-la-aparat",
+        "v-up",
+        "v-up-cu-minge"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege o singură variantă avansată de ridicare în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "ridicari-de-trunchi-cu-disc",
+      "canonical_name": "Ridicări de trunchi cu disc",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "reduced_priority",
+        "guidance": "Prioritate redusă; se preferă o variantă mai stabilă sau mai ușor de scalat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "flexie controlată a trunchiului pentru abdomen"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "abdomene",
+        "crunch-cu-gantera",
+        "crunch-cu-minge"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege de regulă o singură variantă de flexie abdominală cu același rol în sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "ridicari-din-umeri-cu-bara",
+      "canonical_name": "Ridicări din umeri cu bara",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 2,
+      "female_priority": 1,
+      "min_rotation_days": {
+        "male": 7,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "exercițiu auxiliar pentru trapez"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-din-umeri-cu-gantere",
+        "ridicari-din-umeri-la-aparat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege o singură variantă de ridicări din umeri în aceeași sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 2/5, frecvență minimă 7 zile, rol auxiliar pentru trapez. Femei: prioritate 1/5, frecvență 7 zile, foarte rar în planurile gratuite. 60+: nu se selectează implicit. Alternative: Ridicări din umeri cu gantere; Ridicări din umeri la aparat.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "ridicari-din-umeri-cu-gantere",
+      "canonical_name": "Ridicări din umeri cu gantere",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "acasa"
+      ],
+      "male_priority": 3,
+      "female_priority": 1,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "exercițiu auxiliar pentru trapez"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-din-umeri-cu-bara",
+        "ridicari-din-umeri-la-aparat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege o singură variantă de ridicări din umeri în aceeași sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "corrected_recovered_rule",
+        "reference": "corecție din VEMI_Targeted_Point_Evidence_2026-08-08.jsonl",
+        "original_rule": {
+          "approved_summary": "Gen: femeie. Vârstă: 34 ani. Nivel: începător. Locație: acasă. Prioritate și frecvență: tonifiere, 3 zile pe săptămână. Rol: full-body. Limitări: genunchi sensibili.",
+          "source": "ultima configurație explicit acceptată 2026-08-08 10:31"
+        }
+      }
+    },
+    {
+      "exercise_key": "ridicari-din-umeri-la-aparat",
+      "canonical_name": "Ridicări din umeri la aparat",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "ridicare controlată a umerilor pentru trapez"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-din-umeri-cu-bara",
+        "ridicari-din-umeri-cu-gantere"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege o singură variantă de ridicări din umeri în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "ridicari-laterale-cu-gantere-cu-pieptul-sprijinit",
+      "canonical_name": "Ridicări laterale cu gantere cu pieptul sprijinit",
+      "canonical_group": "Umeri",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "abducție controlată pentru deltoidul lateral"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-laterale-cu-gantere-din-picioare",
+        "ridicari-laterale-cu-gantere-din-sezut",
+        "ridicari-laterale-la-cablu",
+        "ridicari-laterale-unilaterale-la-cablu"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu aglomera aceeași sesiune cu mai multe variante de ridicări laterale cu același rol."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "ridicari-laterale-cu-gantere-din-picioare",
+      "canonical_name": "Ridicări laterale cu gantere din picioare",
+      "canonical_group": "Umeri",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "abducție controlată pentru deltoidul lateral"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-laterale-cu-gantere-din-sezut",
+        "ridicari-laterale-la-cablu",
+        "ridicari-laterale-unilaterale-la-cablu"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu aglomera aceeași sesiune cu mai multe variante de ridicări laterale cu același rol."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "ridicari-laterale-cu-gantere-din-sezut",
+      "canonical_name": "Ridicări laterale cu gantere din șezut",
+      "canonical_group": "Umeri",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "variantă stabilă pentru deltoidul lateral"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-laterale-cu-gantere-din-picioare",
+        "ridicari-laterale-la-cablu",
+        "ridicari-laterale-unilaterale-la-cablu"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu aglomera aceeași sesiune cu mai multe variante de ridicări laterale cu același rol."
+      ],
+      "notes": [],
+      "source": {
+        "type": "recovered_partial_plus_controlled_completion",
+        "reference": "VEMI_Personal_Context_Evidence_2026-08-08.jsonl"
+      }
+    },
+    {
+      "exercise_key": "ridicari-laterale-cu-gantere-din-sezut-cu-spatele-sprijinit",
+      "canonical_name": "Ridicări laterale cu gantere din șezut cu spatele sprijinit",
+      "canonical_group": "Umeri",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "abducție controlată pentru deltoidul lateral"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-laterale-cu-gantere-din-picioare",
+        "ridicari-laterale-cu-gantere-din-sezut",
+        "ridicari-laterale-la-cablu",
+        "ridicari-laterale-unilaterale-la-cablu"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu aglomera aceeași sesiune cu mai multe variante de ridicări laterale cu același rol."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "ridicari-laterale-la-cablu",
+      "canonical_name": "Ridicări laterale la cablu",
+      "canonical_group": "Umeri",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "abducție controlată pentru deltoidul lateral"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-laterale-cu-gantere-din-picioare",
+        "ridicari-laterale-cu-gantere-din-sezut",
+        "ridicari-laterale-unilaterale-la-cablu"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu aglomera aceeași sesiune cu mai multe variante de ridicări laterale cu același rol."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "ridicari-laterale-la-cablu-din-aplecat",
+      "canonical_name": "Ridicări laterale la cablu din aplecat",
+      "canonical_group": "Umeri",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 2,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "deltoid posterior"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "face-pull",
+        "fluturari-inverse"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu dubla automat mai multe variante pentru deltoidul posterior cu același rol."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 3/5, frecvență minimă 6 zile. Femei: prioritate 2/5, frecvență minimă 7 zile. 60+: nu se selectează implicit. Rol: deltoid posterior. Alternative: Reverse Fly la aparat; Face Pull la cablu. Nivel: nespecificat. Locație: la sală.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "ridicari-laterale-unilaterale-la-cablu",
+      "canonical_name": "Ridicări laterale unilaterale la cablu",
+      "canonical_group": "Umeri",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "variantă unilaterală pentru deltoidul lateral"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-laterale-cu-gantere-din-picioare",
+        "ridicari-laterale-cu-gantere-din-sezut",
+        "ridicari-laterale-la-cablu"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu aglomera aceeași sesiune cu mai multe variante de ridicări laterale cu același rol."
+      ],
+      "notes": [],
+      "source": {
+        "type": "recovered_partial_plus_controlled_completion",
+        "reference": "VEMI_Personal_Context_Evidence_2026-08-08.jsonl"
+      }
+    },
+    {
+      "exercise_key": "ridicari-pe-varfuri-cu-gantere",
+      "canonical_name": "Ridicări pe vârfuri cu gantere",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "flexie plantară pentru gambe"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-pe-varfuri-la-aparat",
+        "ridicari-unilaterale-pe-varfuri-cu-gantera"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege una dintre variantele de gambe când există un singur slot dedicat."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "ridicari-pe-varfuri-la-aparat",
+      "canonical_name": "Ridicări pe vârfuri la aparat",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "flexie plantară pentru gambe"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-pe-varfuri-cu-gantere",
+        "ridicari-unilaterale-pe-varfuri-cu-gantera"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege una dintre variantele de gambe când există un singur slot dedicat."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "ridicari-unilaterale-pe-varfuri-cu-gantera",
+      "canonical_name": "Ridicări unilaterale pe vârfuri cu ganteră",
+      "canonical_group": "Picioare",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "flexie plantară pentru gambe"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-pe-varfuri-cu-gantere",
+        "ridicari-pe-varfuri-la-aparat"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege una dintre variantele de gambe când există un singur slot dedicat."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "russian-twist",
+      "canonical_name": "Russian Twist fără greutate",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "rotație sau flexie laterală controlată pentru oblici"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "aplecari-laterale-din-picioare",
+        "crunch-lateral-din-picioare",
+        "ridicari-de-genunchi-cu-rotatie",
+        "russian-twist-cu-disc"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe variante de rotație cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "russian-twist-cu-disc",
+      "canonical_name": "Russian Twist cu disc",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 3,
+      "female_priority": 3,
+      "min_rotation_days": {
+        "male": 6,
+        "female": 6
+      },
+      "age_60_plus": {
+        "selection": "reduced_priority",
+        "guidance": "Prioritate redusă; se preferă o variantă mai stabilă sau mai ușor de scalat."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "rotație sau flexie laterală controlată pentru oblici"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "aplecari-laterale-din-picioare",
+        "crunch-lateral-din-picioare",
+        "ridicari-de-genunchi-cu-rotatie",
+        "russian-twist"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe variante de rotație cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "superman-alternativ",
+      "canonical_name": "Superman alternativ",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "acasa"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "lombari, fesieri și control al lanțului posterior"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "cobra-din-culcat",
+        "hiperextensii-lombare-la-banca"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Evită acumularea automată a mai multor exerciții cu solicitare similară pentru extensia trunchiului."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 4/5, frecvență 5 zile. Femei: prioritate 4/5, frecvență 5 zile. 60+: acceptat selectiv dacă poziția la sol este confortabilă. Rol: lombari, fesieri și control al lanțului posterior.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "tractiuni-bara",
+      "canonical_name": "Tracțiuni la bară cu priză largă",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 1,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "tragere verticală importantă, condiționată de nivelul de forță"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "tractiuni-la-helcometru-cu-priza-ingusta",
+        "tractiuni-la-helcometru-cu-priza-larga"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Dacă există un singur slot de tragere verticală, alege o singură variantă."
+      ],
+      "notes": [],
+      "source": {
+        "type": "normalized_recovered_rule",
+        "reference": "regulă aprobată recuperată în manifest",
+        "original_rule": {
+          "approved_summary": "Bărbați: prioritate 4/5, frecvență minimă 5 zile, rol tragere verticală importantă condiționată de nivelul de forță. Femei: prioritate 1/5, frecvență 7 zile, nu este alegere standard în planul gratuit. 60+: exclus din selecția implicită. Alternative: Tracțiuni la helcometru cu priză largă; Tracțiuni la helcometru cu priză îngustă.",
+          "source": "context VEMI explicit recuperat"
+        }
+      }
+    },
+    {
+      "exercise_key": "tractiuni-la-helcometru-cu-priza-ingusta",
+      "canonical_name": "Tracțiuni la helcometru cu priză îngustă",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "tragere verticală pentru dorsali"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "tractiuni-bara",
+        "tractiuni-la-helcometru-cu-priza-larga"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Dacă există un singur slot de tragere verticală, alege o singură variantă."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "tractiuni-la-helcometru-cu-priza-larga",
+      "canonical_name": "Tracțiuni la helcometru cu priză largă",
+      "canonical_group": "Spate",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 5,
+      "female_priority": 5,
+      "min_rotation_days": {
+        "male": 4,
+        "female": 4
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "principal",
+        "description": "tragere verticală pentru dorsali"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "tractiuni-bara",
+        "tractiuni-la-helcometru-cu-priza-ingusta"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Dacă există un singur slot de tragere verticală, alege o singură variantă."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "triceps-deasupra-capului",
+      "canonical_name": "Extensii pentru triceps deasupra capului la cablu",
+      "canonical_group": "Triceps",
+      "kind": "forta",
+      "places": [
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "allowed",
+        "guidance": "Se poate selecta în rotație atunci când varianta și ritmul sunt ușor de controlat."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "extensie a cotului cu accent pe triceps"
+      },
+      "level": {
+        "eligible": [
+          "incepator",
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "dips-intre-scaune",
+        "extensii-pentru-triceps-la-cablu-cu-bara",
+        "extensii-pentru-triceps-la-cablu-cu-franghia",
+        "flotari-diamant"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Nu selecta automat mai multe extensii cu același rol în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "v-up",
+      "canonical_name": "V-Up",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 4,
+      "female_priority": 4,
+      "min_rotation_days": {
+        "male": 5,
+        "female": 5
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "secundar",
+        "description": "flexie dinamică a șoldului și trunchiului pentru abdomen"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-de-genunchi-la-aparat",
+        "ridicari-de-picioare-din-atarnat",
+        "v-up-cu-minge"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege o singură variantă avansată de ridicare în aceeași sesiune."
+      ],
+      "notes": [
+        "Priorități egale pentru bărbați și femei; selecția se diferențiază prin nivel, locație și context."
+      ],
+      "source": {
+        "type": "controlled_completion",
+        "reference": "completare controlată offline 2026-08-08"
+      }
+    },
+    {
+      "exercise_key": "v-up-cu-minge",
+      "canonical_name": "V-Up cu minge",
+      "canonical_group": "Abdomen",
+      "kind": "forta",
+      "places": [
+        "acasa",
+        "sala"
+      ],
+      "male_priority": 2,
+      "female_priority": 1,
+      "min_rotation_days": {
+        "male": 7,
+        "female": 7
+      },
+      "age_60_plus": {
+        "selection": "not_default",
+        "guidance": "Nu se selectează implicit; poate apărea numai când nivelul și contextul o justifică."
+      },
+      "role": {
+        "tier": "auxiliar",
+        "description": "exercițiu abdominal avansat, cu implicare importantă a controlului"
+      },
+      "level": {
+        "eligible": [
+          "intermediar",
+          "avansat"
+        ],
+        "preferred": [
+          "intermediar"
+        ]
+      },
+      "alternatives": [
+        "ridicari-de-genunchi-la-aparat",
+        "ridicari-de-picioare-din-atarnat",
+        "v-up"
+      ],
+      "exclusion_keys": [],
+      "exclusions": [
+        "Alege o singură variantă avansată de ridicare în aceeași sesiune."
+      ],
+      "notes": [],
+      "source": {
+        "type": "recovered_partial_plus_controlled_completion",
+        "reference": "VEMI_Personal_Context_Evidence_2026-08-08.jsonl"
+      }
+    }
+  ]
+}

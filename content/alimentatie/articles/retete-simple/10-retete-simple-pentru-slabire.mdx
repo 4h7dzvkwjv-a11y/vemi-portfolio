@@ -1,0 +1,22 @@
+import { RecipeBlock } from "@/components/editorial/recipe-block";
+import { weightLossRecipes } from "@/content/alimentatie/recipes";
+
+## Cum folosești aceste rețete
+
+Cele zece propuneri combină proteine, legume, fructe, leguminoase sau cereale în porții care pot fi integrate într-o zi obișnuită. Sunt exemple practice, nu un plan alimentar și nici promisiuni de rezultat. Poți schimba ordinea meselor și poți ajusta porțiile în funcție de necesarul, foamea, activitatea și preferințele tale.
+
+O singură rețetă nu produce slăbire. Scăderea în greutate depinde de contextul alimentației totale și de menținerea unui deficit energetic în timp. Rețetele de mai jos urmăresc un volum alimentar și o sațietate rezonabile, fără porții absurd de mici sau ingrediente obligatoriu „de dietă”.
+
+## Cele 10 rețete
+
+{weightLossRecipes.map((recipe) => <RecipeBlock key={recipe.number} {...recipe} />)}
+
+**Notă privind estimările nutriționale:** valorile sunt orientative și pot varia în funcție de marca produselor, cantitățile reale, metoda de preparare și substituțiile făcute. Caloriile și proteinele sunt afișate per porție, iar ingredientele cu cantități variabile trebuie verificate și pe eticheta produsului folosit.
+
+## Când merită să discuți cu un nutriționist
+
+Discuția cu un nutriționist sau dietetician poate fi utilă dacă îți este greu să alegi porții potrivite, dacă obiectivul de compoziție corporală intră în conflict cu energia sau performanța ta ori dacă ai restricții alimentare, simptome digestive sau nevoi speciale. Un profesionist poate adapta cantitățile fără să transforme aceste exemple generale într-o prescripție rigidă. Pentru simptome persistente sau afecțiuni medicale, discută și cu medicul.
+
+## Ideea de reținut
+
+Rețetele pot face mesele mai simple și mai sățioase, dar progresul vine din contextul alimentar total și din porții adaptate persoanei, nu dintr-un singur preparat „pentru slăbire”.

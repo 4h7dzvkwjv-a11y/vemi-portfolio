@@ -1,0 +1,42 @@
+{
+  "methodology": {
+    "primarySource": "USDA FoodData Central",
+    "sourceUrl": "https://fdc.nal.usda.gov/",
+    "secondarySource": "Etichete nutriționale reprezentative pentru produse cu variație mare între mărci",
+    "weightBasis": "Cantități crude pentru carne, pește, cereale uscate și legume, exceptând ingredientele marcate explicit drept fierte, scurse sau gătite",
+    "portionMethod": "Totalul ingredientelor a fost împărțit la numărul de porții declarat",
+    "rounding": "Caloriile au fost rotunjite la 10 kcal, iar proteinele la 1 g"
+  },
+  "recipes": [
+    { "id": "slabire-1", "servings": 1, "caloriesTotal": 328, "proteinTotal": 25.4, "displayedCalories": 330, "displayedProtein": 25 },
+    { "id": "slabire-2", "servings": 1, "caloriesTotal": 383, "proteinTotal": 36.5, "displayedCalories": 380, "displayedProtein": 37 },
+    { "id": "slabire-3", "servings": 1, "caloriesTotal": 499, "proteinTotal": 44.8, "displayedCalories": 500, "displayedProtein": 45 },
+    { "id": "slabire-4", "servings": 2, "caloriesTotal": 815, "proteinTotal": 47, "displayedCalories": 410, "displayedProtein": 24 },
+    { "id": "slabire-5", "servings": 1, "caloriesTotal": 523, "proteinTotal": 43.5, "displayedCalories": 520, "displayedProtein": 44 },
+    { "id": "slabire-6", "servings": 1, "caloriesTotal": 435, "proteinTotal": 39, "displayedCalories": 440, "displayedProtein": 39 },
+    { "id": "slabire-7", "servings": 1, "caloriesTotal": 418, "proteinTotal": 40, "displayedCalories": 420, "displayedProtein": 40 },
+    { "id": "slabire-8", "servings": 1, "caloriesTotal": 489, "proteinTotal": 34, "displayedCalories": 490, "displayedProtein": 34 },
+    { "id": "slabire-9", "servings": 1, "caloriesTotal": 323, "proteinTotal": 25.9, "displayedCalories": 320, "displayedProtein": 26 },
+    { "id": "slabire-10", "servings": 1, "caloriesTotal": 389, "proteinTotal": 24, "displayedCalories": 390, "displayedProtein": 24 },
+    { "id": "masa-1", "servings": 1, "caloriesTotal": 768, "proteinTotal": 34, "displayedCalories": 770, "displayedProtein": 34 },
+    { "id": "masa-2", "servings": 1, "caloriesTotal": 811, "proteinTotal": 50, "displayedCalories": 810, "displayedProtein": 50 },
+    { "id": "masa-3", "servings": 1, "caloriesTotal": 820, "proteinTotal": 60, "displayedCalories": 820, "displayedProtein": 60 },
+    { "id": "masa-4", "servings": 1, "caloriesTotal": 773, "proteinTotal": 58, "displayedCalories": 770, "displayedProtein": 58 },
+    { "id": "masa-5", "servings": 1, "caloriesTotal": 890, "proteinTotal": 53.5, "displayedCalories": 890, "displayedProtein": 54 },
+    { "id": "masa-6", "servings": 2, "caloriesTotal": 1554, "proteinTotal": 103, "displayedCalories": 780, "displayedProtein": 52 },
+    { "id": "masa-7", "servings": 2, "caloriesTotal": 1636, "proteinTotal": 107, "displayedCalories": 820, "displayedProtein": 54 },
+    { "id": "masa-8", "servings": 1, "caloriesTotal": 807, "proteinTotal": 71.5, "displayedCalories": 810, "displayedProtein": 72 },
+    { "id": "masa-9", "servings": 1, "caloriesTotal": 705, "proteinTotal": 41.1, "displayedCalories": 710, "displayedProtein": 41 },
+    { "id": "masa-10", "servings": 1, "caloriesTotal": 816, "proteinTotal": 40.2, "displayedCalories": 820, "displayedProtein": 40 },
+    { "id": "mentinere-1", "servings": 1, "caloriesTotal": 549, "proteinTotal": 24, "displayedCalories": 550, "displayedProtein": 24 },
+    { "id": "mentinere-2", "servings": 1, "caloriesTotal": 590, "proteinTotal": 34.6, "displayedCalories": 590, "displayedProtein": 35 },
+    { "id": "mentinere-3", "servings": 1, "caloriesTotal": 689, "proteinTotal": 52.6, "displayedCalories": 690, "displayedProtein": 53 },
+    { "id": "mentinere-4", "servings": 1, "caloriesTotal": 689, "proteinTotal": 46.1, "displayedCalories": 690, "displayedProtein": 46 },
+    { "id": "mentinere-5", "servings": 1, "caloriesTotal": 680, "proteinTotal": 33, "displayedCalories": 680, "displayedProtein": 33 },
+    { "id": "mentinere-6", "servings": 1, "caloriesTotal": 723, "proteinTotal": 55.7, "displayedCalories": 720, "displayedProtein": 56 },
+    { "id": "mentinere-7", "servings": 1, "caloriesTotal": 775, "proteinTotal": 46, "displayedCalories": 780, "displayedProtein": 46 },
+    { "id": "mentinere-8", "servings": 2, "caloriesTotal": 1050, "proteinTotal": 52, "displayedCalories": 530, "displayedProtein": 26 },
+    { "id": "mentinere-9", "servings": 1, "caloriesTotal": 691, "proteinTotal": 50.8, "displayedCalories": 690, "displayedProtein": 51 },
+    { "id": "mentinere-10", "servings": 1, "caloriesTotal": 757, "proteinTotal": 34, "displayedCalories": 760, "displayedProtein": 34 }
+  ]
+}
